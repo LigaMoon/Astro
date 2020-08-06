@@ -1,39 +1,227 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome liigalized,
+<h1 align="center"></h1>
+<h1 align="center"><img src="" /></h1>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+ <a href=""><img src="" width="25px" /></a> :point_left: Live website
 
-## Gitpod Reminders
+  <a href=""><img src="./assets/images/readme-images/githublogo.png" width="25px" /></a> :point_left: GitHub Repository
+ 
+ ## About
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+ 
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+## Table of Contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+[User Experience (UX)](#UX)
 
-A blue button should appear to click: *Make Public*,
+[Features](#features)
 
-Another blue button should appear to click: *Open Browser*.
+[Technologies Used](#technologies)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+[Testing](#testing)
 
-## Updates Since The Instructional Video
+[Deployment](#deployment)
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+[Known Bugs](#bugs)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[Credits](#credits)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<a name="UX"></a>
+## User Experience (UX)
 
---------
+### User Stories
+- #### 
+    1. 
 
-Happy coding!
+### Design
+
+
+- #### Colour scheme
+    - 
+
+        <img src="" height="40px" />
+
+- #### Typography
+    - 
+
+        <img src="" height="20px" />
+
+
+- #### Imagery
+    - 
+
+- #### Wireframes
+    - Wireframes were created using Adobe Xd, however, the layout and design was fallowed very loosely and changed during the mockup stage.
+    - [Mobile Wireframes]() :point_left:
+
+         <img src="" />
+
+    - [Tablet Wireframes]() :point_left:
+
+         <img src="" />
+
+    - [Desktop Wireframes]() :point_left:
+
+         <img src="" />
+
+- #### Mockups
+    - Mockups were also created using Adobe Xd and the final design of the webpage is very closely related hence I haven't included any screenshots.
+    - [Mobile Wireframes]() :point_left:
+    - [Tablet Wireframes]() :point_left
+    - [Desktop Wireframes]() :point_left:
+
+
+ <a name="features"></a>
+## Features
+
+### Existing Features
+
+#### Common Features Across All Pages
+- [x] **X**
+    - 
+
+
+### Specific to Pages
+- [x] **X**
+    - 
+
+
+### Future Features
+ 
+- [ ] 
+
+<a name="technologies"></a>
+## Technologies Used
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://www.javascript.com/)
+
+### Frameworks, Libraries and Programs Used
+
+- 
+
+<a name="#testing"></a>
+## Testing
+
+ ### Functionality Testing
+- #### 
+    - 
+
+
+
+### CSS3 validator - Pass
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliigalized.github.io%2FMS1_boredom_guide%2Fassets%2Fstyles%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!">
+</a> :point_left: Results
+
+
+### HTML5 validator
+- 
+
+### Usability Testing
+- To test the ease of navigation, this website was shared with few friends of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
+- The testers also verified that all buttons, links, hamburger menu and photo carousel work correctly, intuitively and as expected
+
+### Compatibility Testing
+- Browser Compatibility
+
+    | Screen size\Browser | Safari           | Opera            | Microsoft Edge   | Chrome           | Firefox          | Internet Explorer |
+    | --------------------|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:-----------------:|
+    | Mobile              |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| Not Tested        |
+    | Desktop             |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| Not Tested        |
+    | Tablet              |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| Not Tested        |
+
+- OS Compatibility was tested on iOS 13.4.1, Android 10.0, MacOS Catalina, iPadOS 13.4.1 and Windows 10. It is yet to be tested on Unix, Linux or Solaris Operating Systems.
+- The devices used in this testing include Macbook Pro, Toshiba laptop, iPad Pro, iPhone Xr, Xiaomi 3, HTC 11, iPhone 8 and other android mobile phones.
+- The website was exhaustively tested for responsiveness on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). Different viewport sizes were simulated ranging from as small as iPhone 5 (320px) to large desktop sizes (1200px and above).
+
+### Performance Testing
+- 
+
+
+
+
+### Testing User Stories 
+- #### 
+    1.
+- #### 
+    1. 
+- #### 
+    1.
+- #### 
+    1.
+
+
+
+<a name="deployment"></a>
+## Deployment
+
+### Publishing
+This website was published using [GitHub Pages](https://pages.github.com/). The procedure is outlined below.
+1. Go to the GitHub website and log in.
+2. On the left-hand side, you'll see all your repositories, select the appropriate one. ([Repository](https://github.com/liigalized/MS1_boredom_guide) used for this project).
+3. Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
+<img src="./assets/images/readme-images/pages.png" height="35px" />
+4. Scroll down till you see 'GitHub Pages' heading.
+5. Under the 'Source' click on the dropdown and select 'master branch'
+6. The page will reload and you'll see the link of your published page displayed under 'GitHub' pages.
+7. It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
+
+### Forking
+If you wish to contribute to this website you can Fork it without affecting the main branch by following the procedure outlined below.
+1. Go to the GitHub website and log in.
+2. Locate the [Repository](https://github.com/liigalized/MS1_boredom_guide) used for this project.
+3. On the right-hand side of the Repository name, you'll see the 'Fork' button. It's located next to the 'Star' and 'Watch' buttons.
+<img src="./assets/images/readme-images/fork.png" height="35px" />
+4. This will create a copy in your personal repository.
+5. Once you're finished making changes you can locate the 'New Pull Request' button just above the file listing in the original repository.
+
+### Cloning 
+If you wish to clone or download this repository to your local device you can follow the procedure outlined below.
+1. Go to the GitHub website and log in.
+2. Locate the [Repository](https://github.com/liigalized/...) used for this project.
+3. Under the Repository name locate 'Clone or Download' button in green.
+<img src="./assets/images/readme-images/clone.png" height="35px" />
+4. To clone the repository using HTTPS click the link under "Clone with HTTPS".
+5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
+6. Type `Git Clone` and paste the URL you copied from the GitHub.
+7. To create your local clone press `Enter`
+
+<a name="bugs"></a>
+## Known Bugs
+
+
+
+<a name="credits"></a>
+## Credits
+
+### Code :floppy_disk:
+
+- 
+
+### Content :book:
+
+- 
+
+
+### Media :clapper:
+- 
+
+
+### Acknowledgements
+
+- 
+
+
+
+
