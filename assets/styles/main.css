@@ -1,3 +1,27 @@
+/* import font styles */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+/* -------------------- COMMON STYLES ACCROSS ALL PAGES --------------------- */
 body {
-    background-color: lightseagreen;
+    margin: 0;
+    padding: 0;
+    background-color: #1F293B;
+    color: #FFFFD6;
+    font-family: 'Lora', serif;
 }
+
+a {
+    color: #FFFFD6;
+}
+
+a:hover {
+    color: #FFFFD6;
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
