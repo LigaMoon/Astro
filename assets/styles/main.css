@@ -162,4 +162,31 @@ footer {
 }
 
 /* -------------------- CONSTELLATIONS AND ZODIAC PAGE COMMON STYLES --------------------- */
+.graphic-button {
+    padding: 0;
+    background: none;
+    border: 1px solid #FFFFD6;
+    border-radius: 40%;
+}
 
+.graphix-button, .graphic-button img {
+    width: 75px;
+    height: 75px;
+}
+
+.graphic-button-heading {
+    font-family: "Elina", cursive;
+    margin-bottom: 0.25rem;
+}
+
+.graphic-button-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:576px) {
+    .graphic-button-container {
+        max-width: 600px;
+        
+    }
+}
