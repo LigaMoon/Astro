@@ -19,9 +19,83 @@ a:hover {
     text-decoration: none;
 }
 
+button:focus{
+    outline: none !important; 
+}
+
 .uppercase {
     text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+/* -------------------- HEADER--------------------- */
+/* to counteract the position of the star and the fixed navbar position */
+header {
+    margin-bottom: 70px;
+}
+
+.navbar{
+    border-bottom: 1px solid #FFFFD6;
+    background-color: #1F293B;
+}
+
+.nav-item{
+    opacity: 0.5;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 
+.nav-item:hover, .active {
+    opacity: 1;
+}
+a .nav-icon{
+    background-image: url('../images/icons/yellow-star-new.png');
+    background-size: contain;
+    height: 22px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+
+a:hover .nav-icon, .active a .nav-icon {
+    opacity: 1;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url('../images/icons/hamburger-menu.png');
+    width: 31px;
+    height: 31px;
+}
+
+
+/* Add star logo to the header and format the position */
+#header-star {
+    height: 60px;
+    width: 40px;
+    background-image: url('../images/icons/yellow-star-new.png');
+    background-size: contain;
+    position: absolute;
+    top: 12px;
+}
