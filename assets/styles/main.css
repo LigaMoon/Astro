@@ -99,3 +99,19 @@ a:hover .nav-icon, .active a .nav-icon {
     position: absolute;
     top: 12px;
 }
+
+/* -------------------- FOOTER --------------------- */
+footer {
+    border-top: 1px solid #FFFFD6;
+}
+
+.footer-item:hover {
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.footer-item:hover {
+    transform: scale(1.2)
+}
