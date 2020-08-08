@@ -1,5 +1,6 @@
 /* import font styles */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+@import url("https://use.typekit.net/bca7kvg.css");
 
 /* -------------------- COMMON STYLES ACCROSS ALL PAGES --------------------- */
 body {
@@ -23,6 +24,7 @@ button:focus{
     outline: none !important; 
 }
 
+/* text styles */
 .uppercase {
     text-transform: uppercase;
     font-weight: 600;
@@ -32,6 +34,58 @@ button:focus{
 .lowercase {
     text-transform: lowercase;
     letter-spacing: 1px;
+}
+.page-describer {
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+/* heading styles */
+.heading-cursive {
+    font-family: "elina",cursive;
+    font-weight: 400;
+}
+
+.main-heading-size{
+    font-size: 3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.main-cursive-size {
+    font-size: 2rem;
+}
+
+.sub-heading-size {
+    font-size: 2rem;
+}
+
+.sub-cursive-size {
+    font-size: 1.5rem;
+}
+
+/* common styles across different screen sizes */
+@media screen and (min-width:576px) {
+    .main-heading-size{
+        font-size: 3.5rem;
+    }
+    .main-cursive-size {
+    font-size: 2.5rem;
+    }
+    .page-describer {
+        padding: 1rem 0.25rem;
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .main-heading-size{
+        font-size: 4rem;
+    }
+    .main-cursive-size {
+    font-size: 3rem;
+    }
 }
 
 /* -------------------- HEADER--------------------- */
@@ -45,23 +99,18 @@ header {
     background-color: #1F293B;
 }
 
+.navbar-nav {
+    text-align: center;
+}
+
 .nav-item{
     opacity: 0.5;
-
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
 
-.navbar-nav {
-    text-align: center;
-}
-
-
-.nav-item:hover, .active {
-    opacity: 1;
-}
 a .nav-icon{
     background-image: url('../images/icons/yellow-star-new.png');
     background-size: contain;
@@ -70,25 +119,21 @@ a .nav-icon{
     display: inline-block;
     vertical-align: middle;
     opacity: 0;
-
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
 
-
-a:hover .nav-icon, .active a .nav-icon {
+a:hover .nav-icon, .active a .nav-icon, .nav-item:hover, .active {
     opacity: 1;
 }
-
 
 .navbar-toggler-icon {
     background-image: url('../images/icons/hamburger-menu.png');
     width: 31px;
     height: 31px;
 }
-
 
 /* Add star logo to the header and format the position */
 #header-star {
@@ -105,7 +150,7 @@ footer {
     border-top: 1px solid #FFFFD6;
 }
 
-.footer-item:hover {
+.footer-item{
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -115,3 +160,6 @@ footer {
 .footer-item:hover {
     transform: scale(1.2)
 }
+
+/* -------------------- CONSTELLATIONS AND ZODIAC PAGE COMMON STYLES --------------------- */
+
