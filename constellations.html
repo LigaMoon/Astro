@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Astro</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/styles/main.css">
+        <script src="https://kit.fontawesome.com/d6343cbdf9.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="d-flex flex-column h-100">
         <header>
             <nav class="navbar fixed-top navbar-expand-md py-0">
                 <a class="navbar-brand ml-5 uppercase" href="./index.html">Astro</a>
@@ -42,10 +43,27 @@
             </nav>
             <a class="fixed-top" href="./index.html"><span id="header-star"></span></a>
         </header>
-        
-        <h1>This is the constellation page</h1>
+        <main role="main" class="flex-shrink-0">
+            <h1 name="top">This is the constellation page</h1>
+        </main>
 
-
+        <footer class="footer mt-auto">
+            <div class="container-fluid lowercase">
+                <div class="row">
+                    <a href="#top" class="col-4 offset-2 col-md offset-md-0 py-2 px-3 px-md-5 text-center"> go to top </a>
+                    <a href="./index.html#about" class="col-4 col-md-auto py-2 px-3 px-md-5 text-center"> about </a>
+                    <div class="col-8 col-md mx-auto py-2 px-3 pl-md-5 text-center">
+                        <span class="">Contact me:</span>
+                        <a href="https://github.com/liigalized" target="_blank" class="px-2"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ligabaikova" target="_blank" class="px-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/liiga_moon/" target="_blank" class="px-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col my-0 text-center py-2 text-muted"> Graphics designed by Claire Schorman <a href="#"><i class="fab fa-instagram"></i></a></p>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
