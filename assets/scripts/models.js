@@ -93,10 +93,19 @@ for( let i = 0; i < constellation.length ; i++ ) {
     scene.add( sphere );   
 }
 
+// add line and point geometry to connect the stars
+var geometry = new THREE.BufferGeometry().setFromPoints(constellation);
+var materialPoint = new THREE.PointsMaterial({color: 0xffffff, size: 0.01});
+var materialLine = new THREE.LineBasicMaterial({color: 0xdddddd, transparent: true});
+materialLine.opacity = 0.3;
+var points = new THREE.Points(geometry, materialPoint);
+var line = new THREE.Line(geometry, materialLine);
+scene.add(points);
+scene.add(line);
+
 // add function to render created geometry
 function animate( ) {
     renderer.render( scene, camera );
     requestAnimationFrame( animate );
 }
-
 animate();
