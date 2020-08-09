@@ -1,29 +1,8 @@
-// creating the scene by initialising the scene, camera and renderer
-// adding canvas to the model div
-var container = document.getElementById( 'canvas' );
-var parent = document.getElementById( 'model-container' );
-parent.appendChild( container );
+// initialize variables
+var renderer, scene, camera, container, parent;
+var controls;
 
-// creating the renderer, setting the resolution and renderer size
-var renderer = new THREE.WebGLRenderer( );
-renderer.setPixelRatio( window.devicePixelRatio );
-renderer.setSize( 400, 400 );
-container.appendChild( renderer.domElement );
-
-// creating the scene and setting it's background color
-var scene = new THREE.Scene( );
-scene.background = new THREE.Color( 0x131A27 );
-
-// creating the camera view and position that it is looking at
-var camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
-camera.position.set( 0, 0, 8 );
-camera.lookAt( scene.position );
-
-//Creating white light so the object can be seen and add it to the scene
-var light = new THREE.AmbientLight( 0xffffff, 0.7 );
-scene.add( light );
-
-// add coordinates, star name and star type for one constellation
+// constellation data
 var capricornus = [
     {
         coord: [3.3, 2.1, -0.5],
@@ -75,37 +54,74 @@ var capricornus = [
         name: "Dabih",
         type: "Multiple Star System"
     }];
+    
 
-// create an array for constellation coordinates to be added to and used to display
-var constellation = [ ];
+init( );
+createConstellation( );
+animate();
 
-// create sphere geometry for stars to be created at each coordinate
-for( let i = 0; i < capricornus.length; i ++ ) {
-    constellation.push( new THREE.Vector3( capricornus[i].coord[0], capricornus[i].coord[1], capricornus[i].coord[2] ) );
-    var geometrySphere = new THREE.SphereGeometry( 0.2, 32, 32 );
+// create function to set the scene with renderer, camera and interactive controls
+function init ( ) {
+    // init container
+    container = document.getElementById( 'canvas' );
+    parent = document.getElementById( 'model-container' );
+    parent.appendChild( container );
+
+    // init renderer
+    renderer = new THREE.WebGLRenderer( {antialias: true} );
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( 400, 400 );
+    container.appendChild( renderer.domElement );
+
+    // init scene
+    scene = new THREE.Scene( );
+    scene.background = new THREE.Color( 0x131A27 );
+
+    // init camera
+    camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
+    camera.position.set( 0, 0, 8 );
+    camera.lookAt( scene.position );
+
+    // init interactive controls
+    controls = new THREE.OrbitControls( camera, container );
+    // controls.enableZoom = false;
 }
 
+// function to create constellations with spheres, lines and points
+function createConstellation( ) {
+    // add white light
+    var light = new THREE.AmbientLight( 0xffffff, 0.7 );
+    scene.add( light );
 
-// add material to each sphere and add all to the scene tobe visible
-for( let i = 0; i < constellation.length ; i++ ) {
-    var sphere = new THREE.Mesh( geometrySphere, new THREE.MeshLambertMaterial( { color: 0xFFFFD6 } ) );
-    sphere.position.set( constellation[i].x, constellation[i].y, constellation[i].z );
-    scene.add( sphere );   
+    // create an array for constellation coordinates to be adde
+    var constellation = [ ];
+
+    // iterate through coordinates and add do the array, create sphere at these coordinates
+    for( let i = 0; i < capricornus.length; i ++ ) {
+        constellation.push( new THREE.Vector3( capricornus[i].coord[0], capricornus[i].coord[1], capricornus[i].coord[2] ) );
+        var geometrySphere = new THREE.SphereGeometry( 0.2, 32, 32 );
+    }
+    
+    // add material to each sphere
+    for( let i = 0; i < constellation.length ; i++ ) {
+        var sphere = new THREE.Mesh( geometrySphere, new THREE.MeshLambertMaterial( { color: 0xFFFFD6 } ) );
+        sphere.position.set( constellation[i].x, constellation[i].y, constellation[i].z );
+        scene.add( sphere );   
+    }
+
+    // add line and point geometry to connect the stars
+    var geometry = new THREE.BufferGeometry().setFromPoints(constellation);
+    var materialPoint = new THREE.PointsMaterial({color: 0xffffff, size: 0.01});
+    var materialLine = new THREE.LineBasicMaterial({color: 0xdddddd, transparent: true});
+    materialLine.opacity = 0.3;
+    var points = new THREE.Points(geometry, materialPoint);
+    var line = new THREE.Line(geometry, materialLine);
+    scene.add(points);
+    scene.add(line);
 }
-
-// add line and point geometry to connect the stars
-var geometry = new THREE.BufferGeometry().setFromPoints(constellation);
-var materialPoint = new THREE.PointsMaterial({color: 0xffffff, size: 0.01});
-var materialLine = new THREE.LineBasicMaterial({color: 0xdddddd, transparent: true});
-materialLine.opacity = 0.3;
-var points = new THREE.Points(geometry, materialPoint);
-var line = new THREE.Line(geometry, materialLine);
-scene.add(points);
-scene.add(line);
 
 // add function to render created geometry
 function animate( ) {
     renderer.render( scene, camera );
     requestAnimationFrame( animate );
 }
-animate();
