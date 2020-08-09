@@ -230,9 +230,19 @@ footer {
 }
 
 /* -------------------- CONSTELLATIONS PAGE STYLE --------------------- */
-.model-container {
+/* .model-container {
     height: 400px;
     max-width: 400px;
+} */
+
+#canvas {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
 }
 
 .model-instructions ol li{
@@ -259,3 +269,4 @@ footer {
         font-size: 1.25rem;
     }
 }
+
