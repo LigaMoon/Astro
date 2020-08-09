@@ -53,8 +53,720 @@ var capricornus = [
         coord: [3.4, 1.8, -2.0],
         name: "Dabih",
         type: "Multiple Star System"
-    }];
-    
+    }
+];
+var aquarius = [
+    {
+        coord: [4.3, -0.1, -0.5],
+        name: "Albali",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [2.4, 1.8, -4.0],
+        name: "Sadalsuud",
+        type: "Yellow Supergiant Star"
+    },
+    {
+        coord: [-0.2, 3.4, -4.0],
+        name: "Sadalmelik",
+        type: "Yellow Supergiant Star"
+    },
+    {
+        coord: [-1.4, 1.9, -0.5],
+        name: "Sadachbia",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-0.75, 0.4, -0.6],
+        name: "Ancha",
+        type: "Yellow-White Subginat Star"
+    },
+    {
+        coord: [-0.01, -1.0, -0.5],
+        name: "Iota Aquarii",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [-0.75, 0.4, -0.6],
+        name: "Ancha",
+        type: "Yellow-White Subginat Star"
+    },
+    {
+        coord: [-1.4, 1.9, -0.5],
+        name: "Sadachbia",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-2.1, 2.23, 0],
+        name: "Sadaltager",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-2.9, 0.4, -0.5],
+        name: "Lambda Aquarii",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [-2.8, -1.3, -1.5],
+        name: "Tau-1 Aquarii",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-2.89, -1.9, -0.5],
+        name: "Skat",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [-3.7, -3.3, -0.5],
+        name: "88-Aquarii",
+        type: "Orange Giant Star"
+    }
+];
+var pisces = [
+    {
+        coord: [2.5, -1.6, 0.0],
+        name: "Iota Piscium",
+        type: "Yellow-White Dwarf Star"
+    },
+    {
+        coord: [3.7, -1.3, -1.0],
+        name: "Theta Piscium",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [4.0, -2.0, -0.9],
+        name: "Gamma Piscium",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [3.5, -2.5, -1.0],
+        name: "Kappa Piscium",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [2.7, -2.4, -0.7],
+        name: "Lambda Piscium",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [2.5, -1.6, 0.0],
+        name: "Iota Piscium",
+        type: "Yellow-White Dwarf Star"
+    },
+    {
+        coord: [1.85, -1.4, -0.7],
+        name: "Omega Piscium",
+        type: "Yellow-White Subgiant Star"
+    },
+    {
+        coord: [-0.6, -1.7, -4.0],
+        name: "Delta Piscium",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-1.3, -1.2, -1.0],
+        name: "Epsilon Piscium",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-2.62, -1.5, -1.5],
+        name: "Mu Piscium",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [-3.2, -1.6, -2.0],
+        name: "Nu Piscium",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-3.8, -2.0, -1.0],
+        name: "Xi Piscium",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-4.2, -2.1, -0.3],
+        name: "Alrischa",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-3.35, -0.85, -1.5],
+        name: "Omicron Piscium",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [-2.6, 0.36, -2.0],
+        name: "Kallat Nunu",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [-1.6, 2.0, -3.0],
+        name: "Chi Piscium",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.65, 3.0, -3.7],
+        name: "Phi Piscium",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-1.85, 3.5, -3.0],
+        name: "Tau Piscium",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.5, 4.2, -3.7],
+        name: "Upsilon Piscium",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [-1.65, 3.0, -3.7],
+        name: "Phi Piscium",
+        type: "Binary Star System"
+    }
+];
+var aries = [
+    {
+        coord: [3.8, -1.65, -1.0],
+        name: "Mesarthim",
+        type: "Binary Star System"
+    },
+    {
+        coord: [3.4, -0.9, 0],
+        name: "Sheratan",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [2.25, 0, 0],
+        name: "Hamal",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.4, 2.8, -2.0],
+        name: "41 Arietis",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [2.25, 0, 0],
+        name: "Hamal",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-2.2, -0.85, -2.0],
+        name: "Epsilon Arietis",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-3.8, -0.9, -3.0],
+        name: "Zeta Arietis",
+        type: "White Dwarf Star"
+    }
+];
+var taurus = [
+    {
+        coord: [-3.7, 3.15, -1.0],
+        name: "Elnath",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [-0.9, 1.4, -3.5],
+        name: "Tau Tauri",
+        type: "Triple Star System"
+    },
+    {
+        coord: [0.01, 0.3, -1.0],
+        name: "Ain",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [0.4, -0.2, -1.0],
+        name: "Hyadum II",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [0.6, -0.7, -1.0],
+        name: "Hyadum I",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [-0.01, -0.65, -1.0],
+        name: "Theta Tauri",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-0.5, -0.5, 0],
+        name: "Aldebaran",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-4.8, 1.05, -4.0],
+        name: "Zeta Tauri",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-0.5, -0.5, 0],
+        name: "Aldebaran",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-0.01, -0.65, -1.0],
+        name: "Theta Tauri",
+        type: "Binary Star System"
+    },
+    {
+        coord: [0.6, -0.7, -1.0],
+        name: "Hyadum I",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [1.95, -1.55, -3.5],
+        name: "Lambda Tauri",
+        type: "Triple Star System"
+    },
+    {
+        coord: [0.1, -2.6, -4.0],
+        name: "Mu Tauri",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [1.8, -3.4, -4.0],
+        name: "Nu Tauri",
+        type: "White Dwarf Star"
+    },
+    {
+        coord: [0.1, -2.6, -4.0],
+        name: "Mu Tauri",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [1.95, -1.55, -3.5],
+        name: "Lambda Tauri",
+        type: "Triple Star System"
+    },
+    {
+        coord: [4.05, -1.3, -3.0],
+        name: "unknown"
+    },
+    {
+        coord: [4.4, -2.2, -2.0],
+        name: "Xi Tauri",
+        type: "Triple Star System"
+    },
+    {
+        coord: [4.55, -2.6, -2.0],
+        name: "Omicron Tauri",
+        type: "Yellow Giant Star"
+    }
+];
+var gemini = [
+    {
+        coord: [3.4, -0.2, -1.0],
+        name: "Eta Geminorum",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [2.85, -0.2, -0.7],
+        name: "Tejat Posterior",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [1.4, 0.45, -2.5],
+        name: "Mebsuta",
+        type: "Blue Supergiant Star"
+    },
+    {
+        coord: [-0.4, 1.95, -1.0],
+        name: "Tau Geminorum",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.9, 2.5, 0],
+        name: "Castor",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [-2.65, 1.4, 0],
+        name: "Pollux",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-2.7, 0.3, -0.0],
+        name: "Kappa Geminorum",
+        type: "White Dwarf Star"
+    },
+    {
+        coord: [-1.1, -0.5, -0.2],
+        name: "Wasat",
+        type: "Blue-White Subdwarf Star"
+    },
+    {
+        coord: [0.01, -0.9, -4.0],
+        name: "Mekbuda",
+        type: "Yellow Supergiant Star"
+    },
+    {
+        coord: [1.9, -2.1, -0.4],
+        name: "Alhena",
+        type: "Blue Subdwarf Star"
+    },
+    {
+        coord: [1.37, -3.2, -0.2],
+        name: "Alzirr",
+        type: "Blue-White Subdwarf Star"
+    }
+];
+var cancer = [
+    {
+        coord: [-0.2, 3.4, -3.0],
+        name: "HIP 43103",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [0.1, 1.0, -2.0],
+        name: "Asellus Borealis",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [0.01, -0.15, 0],
+        name: "Asellus Australis",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.2, -2.2, -2.0],
+        name: "Acubens",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [0.01, -0.15, 0],
+        name: "Asellus Australis",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [2.25, -3.05, -3.0],
+        name: "Altarf",
+        type: "Orange Giant Star"
+    }
+];
+var leo = [
+    {
+        coord: [4.05, 1.85, -1.0],
+        name: "Ras Elased Australis",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [3.5, 2.5, -0.5],
+        name: "Ras Elased Borealis",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [1.95, 1.6, -1.0],
+        name: "Adhafera",
+        type: "Blue-White Giant Star"
+    },
+    {
+        coord: [1.8, 0.5, -0.5],
+        name: "Algiebra",
+        type: "Binary Star System"
+    },
+    {
+        coord: [4.25, -0.35, -4.0],
+        name: "Eta Leonis",
+        type: "White Supergiant Star"
+    },
+    {
+        coord: [2.7, -1.8, 0],
+        name: "Regulus",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [-2.01, -0.8, -0.5],
+        name: "Chertan",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [-2.0, 0.7, -0.2],
+        name: "Zosma",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [-4.5, -0.9, 0],
+        name: "Denebola",
+        type: "Blue-White Subgiant Star"
+    },
+    {
+        coord: [-2.01, -0.8, -0.5],
+        name: "Chertan",
+        type: "Blue-White Subgiant Star"
+    }
+];
+var virgo = [
+    {
+        coord: [4.8, 0.7, -3.5],
+        name: "Zavijava",
+        type: "Yellow-White Dwarf Star"
+    },
+    {
+        coord: [1.7, -0.5, -4.0],
+        name: "Zaniah",
+        type: "Triple Star System"
+    },
+    {
+        coord: [0.15, -0.2, 0],
+        name: "Porrima",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-0.85, 1.15, -2.0],
+        name: "Auva",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [-1.3, 3.2, -1.0],
+        name: "Vindemiatrix",
+        type: "Yellow-White Giant Star"
+    },
+    {
+        coord: [-0.85, 1.15, -2.0],
+        name: "Auva",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [0.15, -0.2, 0],
+        name: "Porrima",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-1.9, -1.3, -1.0],
+        name: "unknown",
+        type: "unknown"
+    },
+    {
+        coord: [-3.65, 0.1, -0.5],
+        name: "Heze",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [-1.9, -1.3, -1.0],
+        name: "unknown",
+        type: "unknown"
+    },
+    {
+        coord: [-2.9, -2.9, -2.0],
+        name: "Spica",
+        type: "Blue Giant Star"
+    },
+];
+var libra = [
+    {
+        coord: [1.45, -2.6, -3.0],
+        name: "Brachium",
+        type: "Red Giant Star"
+    },
+    {
+        coord: [2.8, 1.3, 0],
+        name: "Zuben Elgenubi",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [0.2, 4.15, -2.0],
+        name: "Zuben Elschemali",
+        type: "Blue-White Dwarf Star"
+    },
+    {
+        coord: [-1.6, 1.8, -2.5],
+        name: "Zuben Elakrab",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [2.8, 1.3, 0],
+        name: "Zuben Elgenubi",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [-1.6, 1.8, -2.5],
+        name: "Zuben Elakrab",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.5, -3.85, -1.0],
+        name: "Upsilon Librae",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.65, -4.55, -1.0],
+        name: "Tau Librae",
+        type: "Blue-White Dwarf Star"
+    }
+];
+var scorpius = [
+    {
+        coord: [-3.43, -2.0, -2.0],
+        name: "Shaula",
+        type: "Triple Star System"
+    },
+    {
+        coord: [-3.9, -2.7, -1.5],
+        name: "Girtab",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-5.25, -4.2, -4.0],
+        name: "Apollyon",
+        type: "Yellow-White Supergiant Star"
+    },
+    {
+        coord: [-3.4, -4.2, -1.0],
+        name: "Sargas",
+        type: "Yellow Giant Star"
+    },
+    {
+        coord: [-1.65, -4.1, 0],
+        name: "Eta Scorpii",
+        type: "Yellow-White Subgiant Star"
+    },
+    {
+        coord: [-0.45, -5.3, -4.0],
+        name: "HIP 8267",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [-0.3, -2.1, -1.5],
+        name: "Mu-1 Scorpii",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-0.15, -0.7, 0],
+        name: "Wei",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [1.0, 1.6, -1.5],
+        name: "Alniyat",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [1.6, 2.2, -2.0],
+        name: "Antares",
+        type: "Red Supergiant Star"
+    },
+    {
+        coord: [2.3, 2.5, -2.0],
+        name: "Alniyat",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [3.8, 4.9, -2.5],
+        name: "Acrab",
+        type: "Binary Star System"
+    },
+    {
+        coord: [2.3, 2.5, -2.0],
+        name: "Alniyat",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [4.2, 3.5, -2.0],
+        name: "Dschubba",
+        type: "Binary Star System"
+    },
+    {
+        coord: [2.3, 2.5, -2.0],
+        name: "Alniyat",
+        type: "Multiple Star System"
+    },
+    {
+        coord: [4.19, 2.2, -1.5],
+        name: "Pi Scorpii",
+        type: "Triple Star System"
+    }
+];
+var sagittarius = [
+    {
+        coord: [2.3, -4.3, -0.5],
+        name: "Sephdar",
+        type: "Binary Star System"
+    },
+    {
+        coord: [1.7, -3.25, -0.5],
+        name: "Kaus Australis",
+        type: "Binary Star System"
+    },
+    {
+        coord: [2.1, -1.15, -1.5],
+        name: "Kaus Media",
+        type: "Double Star"
+    },
+    {
+        coord: [3.55, -1.45, 0],
+        name: "Alnasl",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [2.1, -1.15, -1.5],
+        name: "Kaus Media",
+        type: "Double Star"
+    },
+    {
+        coord: [1.4, 0.9, 0],
+        name: "Kaus Borealis",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [5.0, 4.0, -4.0],
+        name: "Polis",
+        type: "Multiple Star system"
+    },
+    {
+        coord: [1.4, 0.9, 0],
+        name: "Kaus Borealis",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-0.4, 0.15, -1.0],
+        name: "Phi Sagittarii",
+        type: "Blue Giant Star"
+    },
+    {
+        coord: [-1.4, 0.4, -1.0],
+        name: "Nunki",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [-2.55, -0.3, -0.5],
+        name: "Tau Sagittarii",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-2.05, -1.3, 0],
+        name: "Ascella",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-2.55, -0.3, -0.5],
+        name: "Tau Sagittarii",
+        type: "Orange Giant Star"
+    },
+    {
+        coord: [-1.4, 0.4, -1.0],
+        name: "Nunki",
+        type: "Blue Subgiant Star"
+    },
+    {
+        coord: [-2.5, 2.4, -0.5],
+        name: "Omicron Sagittarii",
+        type: "Binary Star System"
+    },
+    {
+        coord: [-3.7, 3.5, -2.0],
+        name: "Albaldah",
+        type: "Triple Star System"
+    },
+    {
+        coord: [-4.45, 4.1, -0.5],
+        name: "Rho-1 Sagittarii",
+        type: "Blue-White Subgiant Star"
+    }
+];
+
 
 init( );
 createConstellation( );
