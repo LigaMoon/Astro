@@ -767,10 +767,13 @@ var sagittarius = [
     }
 ];
 
+// add all constellations as objects into one array
+var constellations = [{constName: "capricornus", data: capricornus},{constName: "aquarius", data: aquarius},{constName:"pisces", data: pisces },{constName:"aries", data: aries},{constName:"taurus", data: taurus},{constName:"gemini", data: gemini},{constName:"cancer", data: cancer},{constName:"leo", data: leo},{constName:"virgo", data: virgo},{constName:"libra", data: libra},{constName:"scorpius", data: scorpius},{constName:"sagittarius", data: sagittarius}];    
+let button = document.getElementsByClassName("graphic-button");
 
 init( );
 createConstellation( );
-animate();
+animate( );
 
 // create function to set the scene with renderer, camera and interactive controls
 function init ( ) {
@@ -797,6 +800,23 @@ function init ( ) {
     // init interactive controls
     controls = new THREE.OrbitControls( camera, container );
     // controls.enableZoom = false;
+}
+
+// function to implement button functionality
+function buttons( ){
+    for( let i = 0; i < button.length; i++ ){
+        button[i].addEventListener( "click",function( ){
+            //remove previous constellations objects to have a space for new ones
+            while (scene.children.length > 0) {
+                    scene.remove(scene.children[0]);
+            }
+            // currentConstellation = constellations[i];
+            // console.log(currentConstellation);
+            constellationData = constellations[i].data;
+            createConstellation(constellationData);
+            animate();
+        });
+    }
 }
 
 // function to create constellations with spheres, lines and points
