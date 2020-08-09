@@ -821,6 +821,7 @@ function init ( ) {
 
     window.addEventListener( 'resize', onWindowResize, false );
     window.addEventListener( 'mousemove', raycast, false );
+    container.addEventListener( 'click', starDisplay, false );
 }
 
 // function to implement button functionality
@@ -904,6 +905,27 @@ function raycast( event ){
                 INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex( );
                 intersects[i].object.material.emissive.setHex( 0xffffd6 );
             } 
+        }
+    }
+}
+
+// change star data in the container when a star is clicked
+function starDisplay( event ) {
+    mouse.x = ( event.offsetX / 400 ) * 2 - 1;
+    console.log( event.clientX );
+    mouse.y = - ( event.offsetY / 400 ) * 2 + 1;
+    raycaster.setFromCamera( mouse, camera );
+    intersects = raycaster.intersectObjects( scene.children );
+
+    for( let i = 0; i < intersects.length; i++ ){
+        if ( intersects[i].object.type == "Mesh" ) {
+            let position = intersects[i].object.position.x;
+            for( let i = 0; i < constellationData.length; i++ ){
+                if ( constellationData[i].coord[0] == position ) {
+                    document.getElementById( 'star-name' ).innerText = constellationData[i].name;
+                    document.getElementById( 'star-type' ).innerText = constellationData[i].type;
+                }
+            }
         }
     }
 }
