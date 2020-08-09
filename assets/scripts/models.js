@@ -768,12 +768,25 @@ var sagittarius = [
 ];
 
 // add all constellations as objects into one array
-var constellations = [{constName: "capricornus", data: capricornus},{constName: "aquarius", data: aquarius},{constName:"pisces", data: pisces },{constName:"aries", data: aries},{constName:"taurus", data: taurus},{constName:"gemini", data: gemini},{constName:"cancer", data: cancer},{constName:"leo", data: leo},{constName:"virgo", data: virgo},{constName:"libra", data: libra},{constName:"scorpius", data: scorpius},{constName:"sagittarius", data: sagittarius}];    
+var constellations = [
+    {constName: "capricornus", data: capricornus, constHtml: 'Capri<span class="sub-cursive-size lowercase heading-cursive">cornus</span>'},
+    {constName: "aquarius", data: aquarius, constHtml: 'Aqua<span class="sub-cursive-size lowercase heading-cursive">rius</span>'},
+    {constName:"pisces", data: pisces, constHtml: 'Pis<span class="sub-cursive-size lowercase heading-cursive">ces</span>'},
+    {constName:"aries", data: aries, constHtml: 'Ar<span class="sub-cursive-size lowercase heading-cursive">ies</span>'},
+    {constName:"taurus", data: taurus, constHtml: 'Tau<span class="sub-cursive-size lowercase heading-cursive">rus</span>'},
+    {constName:"gemini", data: gemini, constHtml: 'Gemi<span class="sub-cursive-size lowercase heading-cursive">ni</span>'},
+    {constName:"cancer", data: cancer, constHtml: 'Can<span class="sub-cursive-size lowercase heading-cursive">cer</span>'},
+    {constName:"leo", data: leo, constHtml: 'Le<span class="sub-cursive-size lowercase heading-cursive">o</span>'},
+    {constName:"virgo", data: virgo, constHtml: 'Vir<span class="sub-cursive-size lowercase heading-cursive">go</span>'},
+    {constName:"libra", data: libra, constHtml: 'Lib<span class="sub-cursive-size lowercase heading-cursive">ra</span>'},
+    {constName:"scorpius", data: scorpius, constHtml: 'Scor<span class="sub-cursive-size lowercase heading-cursive">pius</span>'},
+    {constName:"sagittarius", data: sagittarius, constHtml: 'Sagitt<span class="sub-cursive-size lowercase heading-cursive">arius</span>'}
+];    
+
 let button = document.getElementsByClassName("graphic-button");
 
 init( );
-createConstellation( );
-animate( );
+buttons( );
 
 // create function to set the scene with renderer, camera and interactive controls
 function init ( ) {
@@ -807,20 +820,19 @@ function buttons( ){
     for( let i = 0; i < button.length; i++ ){
         button[i].addEventListener( "click",function( ){
             //remove previous constellations objects to have a space for new ones
-            while (scene.children.length > 0) {
-                    scene.remove(scene.children[0]);
+            while ( scene.children.length > 0 ) {
+                scene.remove( scene.children[0] );
             }
-            // currentConstellation = constellations[i];
-            // console.log(currentConstellation);
+            document.querySelector("#model-name").innerHTML = constellations[i].constHtml;
             constellationData = constellations[i].data;
-            createConstellation(constellationData);
-            animate();
+            createConstellation( constellationData );
+            animate( );
         });
     }
 }
 
 // function to create constellations with spheres, lines and points
-function createConstellation( ) {
+function createConstellation( constellationData ) {
     // add white light
     var light = new THREE.AmbientLight( 0xffffff, 0.7 );
     scene.add( light );
@@ -829,8 +841,8 @@ function createConstellation( ) {
     var constellation = [ ];
 
     // iterate through coordinates and add do the array, create sphere at these coordinates
-    for( let i = 0; i < capricornus.length; i ++ ) {
-        constellation.push( new THREE.Vector3( capricornus[i].coord[0], capricornus[i].coord[1], capricornus[i].coord[2] ) );
+    for( let i = 0; i < constellationData.length; i ++ ) {
+        constellation.push( new THREE.Vector3( constellationData[i].coord[0], constellationData[i].coord[1], constellationData[i].coord[2] ) );
         var geometrySphere = new THREE.SphereGeometry( 0.2, 32, 32 );
     }
     
