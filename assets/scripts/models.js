@@ -798,9 +798,9 @@ function init ( ) {
     parent.appendChild( container );
 
     // init renderer
-    renderer = new THREE.WebGLRenderer( {antialias: true} );
+    renderer = new THREE.WebGLRenderer( {antialias: true, alpha: true} );
     renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( 400, 400 );
+    renderer.setSize( container.clientWidth, container.clientHeight );
     container.appendChild( renderer.domElement );
 
     // init raycaster 
@@ -809,6 +809,7 @@ function init ( ) {
     // init scene
     scene = new THREE.Scene( );
     scene.background = new THREE.Color( 0x131A27 );
+
 
     // init camera
     camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
@@ -822,6 +823,7 @@ function init ( ) {
     window.addEventListener( 'resize', onWindowResize, false );
     window.addEventListener( 'mousemove', raycast, false );
     container.addEventListener( 'click', starDisplay, false );
+    container.addEventListener( 'touchstart', onMobileTouch, false );
 }
 
 // function to implement button functionality
@@ -881,20 +883,44 @@ function animate( ) {
 
 // On window resize this function renders the model again
 function onWindowResize( ){
-    renderer.setSize( 400, 400 );
+    renderer.setSize( container.clientWidth, container.clientHeight );
     camera.aspect = 1;
     camera.updateProjectionMatrix( );
 } 
 
-// change star brightnes when mouse hovers over
-function raycast( event ){
+// initialise normalized coordinates on click or hover for a mouse
+function normSetup ( event ){
     // get normalized mouse coordinates and get objects that are rendered
-    mouse.x = ( event.offsetX / 400 ) * 2 - 1;
-    mouse.y = - ( event.offsetY / 400 ) * 2 + 1;
+    mouse.x = ( event.offsetX / container.clientWidth ) * 2 - 1;
+    mouse.y = - ( event.offsetY / container.clientHeight ) * 2 + 1;
+
+    raycasterSetup( mouse );
+}
+
+// initialise normalized coordinates on touch for a mobile device
+function normSetupMobile ( event ) {
+    // prevents scrolling
+    event.preventDefault();
+    // get normalized coordinates
+    const rect = canvas.getBoundingClientRect();
+    let pos =  {
+        x: (event.touches[0].clientX - rect.left) * container.offsetWidth  / rect.width,
+        y: (event.touches[0].clientY - rect.top) * container.offsetHeight  / rect.height,
+    };
+    mouse.x = (pos.x / container.offsetWidth ) *  2 - 1;
+    mouse.y = (pos.y / container.offsetHeight) * -2 + 1;
+
+    raycasterSetup( mouse );
+}
+
+// setup clicked/touched coordinates and scene object coordinates that have been intersected
+function raycasterSetup ( mouse ) {
     raycaster.setFromCamera( mouse, camera );
     intersects = raycaster.intersectObjects( scene.children );
+}
 
-    // compare the mouse coordinates with the object coordinates and change brightness if the correct object intersected
+// compare the mouse coordinates with the object coordinates and change brightness if the correct object intersected
+function starBrightness( ) {
     for( let i = 0; i < intersects.length; i++ ){
         if ( intersects[i].object.position.x !== 0 ) {
             if ( INTERSECTED != intersects[i].object ) {
@@ -909,14 +935,8 @@ function raycast( event ){
     }
 }
 
-// change star data in the container when a star is clicked
-function starDisplay( event ) {
-    mouse.x = ( event.offsetX / 400 ) * 2 - 1;
-    console.log( event.clientX );
-    mouse.y = - ( event.offsetY / 400 ) * 2 + 1;
-    raycaster.setFromCamera( mouse, camera );
-    intersects = raycaster.intersectObjects( scene.children );
-
+// change star data in the container depending which star has been clicked
+function starData( ) {
     for( let i = 0; i < intersects.length; i++ ){
         if ( intersects[i].object.type == "Mesh" ) {
             let position = intersects[i].object.position.x;
@@ -929,3 +949,22 @@ function starDisplay( event ) {
         }
     }
 }
+
+
+function raycast( event ){
+    normSetup( event );
+    starBrightness( );
+}
+
+function starDisplay( event ) {
+    normSetup( event );
+    starData( );
+}
+
+function onMobileTouch( event ) {
+    normSetupMobile( event );
+    starBrightness( );
+    starData( );
+}
+
+ 
