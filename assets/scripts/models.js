@@ -813,6 +813,8 @@ function init ( ) {
     // init interactive controls
     controls = new THREE.OrbitControls( camera, container );
     // controls.enableZoom = false;
+
+    window.addEventListener( 'resize', onWindowResize, false );
 }
 
 // function to implement button functionality
@@ -869,3 +871,10 @@ function animate( ) {
     renderer.render( scene, camera );
     requestAnimationFrame( animate );
 }
+
+// On window resize this function renders the model again
+function onWindowResize( ){
+    renderer.setSize( 400, 400 );
+    camera.aspect = 1;
+    camera.updateProjectionMatrix( );
+} 
