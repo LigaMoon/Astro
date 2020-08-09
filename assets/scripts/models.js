@@ -1,6 +1,8 @@
 // initialize variables
 var renderer, scene, camera, container, parent;
 var controls;
+var mouse = new THREE.Vector2( );
+var raycaster, intersects, INTERSECTED;
 
 // constellation data
 var capricornus = [
@@ -801,6 +803,9 @@ function init ( ) {
     renderer.setSize( 400, 400 );
     container.appendChild( renderer.domElement );
 
+    // init raycaster 
+    raycaster = new THREE.Raycaster();
+
     // init scene
     scene = new THREE.Scene( );
     scene.background = new THREE.Color( 0x131A27 );
@@ -815,6 +820,7 @@ function init ( ) {
     // controls.enableZoom = false;
 
     window.addEventListener( 'resize', onWindowResize, false );
+    window.addEventListener( 'mousemove', raycast, false );
 }
 
 // function to implement button functionality
@@ -878,3 +884,26 @@ function onWindowResize( ){
     camera.aspect = 1;
     camera.updateProjectionMatrix( );
 } 
+
+// change star brightnes when mouse hovers over
+function raycast( event ){
+    // get normalized mouse coordinates and get objects that are rendered
+    mouse.x = ( event.offsetX / 400 ) * 2 - 1;
+    mouse.y = - ( event.offsetY / 400 ) * 2 + 1;
+    raycaster.setFromCamera( mouse, camera );
+    intersects = raycaster.intersectObjects( scene.children );
+
+    // compare the mouse coordinates with the object coordinates and change brightness if the correct object intersected
+    for( let i = 0; i < intersects.length; i++ ){
+        if ( intersects[i].object.position.x !== 0 ) {
+            if ( INTERSECTED != intersects[i].object ) {
+                if ( INTERSECTED ) {
+                    INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
+                }
+                INTERSECTED = intersects[i].object;
+                INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex( );
+                intersects[i].object.material.emissive.setHex( 0xffffd6 );
+            } 
+        }
+    }
+}
