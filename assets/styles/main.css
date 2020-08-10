@@ -73,10 +73,13 @@ h1, h2 {
 }
 
 /* container styles */
-.main-container {
+.main-container, .main-container-zodiac {
     border: 1px solid #FFFFD6;
     border-radius: 20px;
     background-color: #131A27;
+}
+
+.main-container {
     max-width: 600px;
 }
 
@@ -294,3 +297,8 @@ canvas {
     }
 }
 
+/* -------------------- ZODIAC PAGE STYLE --------------------- */
+.zodiac-sign img {
+    height: 100px;
+    width: 100px;
+}
