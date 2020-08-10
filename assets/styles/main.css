@@ -107,8 +107,16 @@ h1, h2 {
     .main-cursive-size {
     font-size: 3rem;
     }
+    .main-container {
+        max-width: 49%;
+    }
 }
 
+@media screen and (min-width:1200px) {
+    .main-container {
+        max-width: 45%;
+    }
+}
 /* -------------------- HEADER--------------------- */
 /* to counteract the position of the star and the fixed navbar position */
 header {
@@ -230,23 +238,26 @@ footer {
 }
 
 /* -------------------- CONSTELLATIONS PAGE STYLE --------------------- */
-/* .model-container {
-    height: 400px;
-    max-width: 400px;
-} */
 
 #canvas {
-    width: 400px;
-    height: 400px;
+    width: 80vw;
+    height: 80vw;
     margin: 0 auto;
 }
+
 
 canvas {
     display: block;
 }
 
+.model-instructions ol{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .model-instructions ol li{
-    margin: 30px 0;
     padding: 10px 20px;
 }
 
@@ -261,12 +272,25 @@ canvas {
     margin: 0 auto;
     background-color: #FFFFD6;
     box-shadow: 3px 3px 20px rgba(225, 225, 225, 0.7);
+}
 
+#reset {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
 }
 
 @media screen and (min-width:576px) {
     .model-instructions ol li, .model-info, .model-info-label{
         font-size: 1.25rem;
+    }
+    #canvas {
+        width: 400px;
+        height: 400px;
     }
 }
 

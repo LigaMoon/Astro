@@ -785,15 +785,34 @@ var constellations = [
     {constName:"sagittarius", data: sagittarius, constHtml: 'Sagitt<span class="sub-cursive-size lowercase heading-cursive">arius</span>'}
 ];    
 
+var container = document.getElementById( 'canvas' );
+var modelName = document.querySelector("#model-name");
 let button = document.getElementsByClassName("graphic-button");
 
-init( );
+// init( );
+reset ( );
 buttons( );
+
+function reset ( ) {
+    let instructions = `<ol>
+            <li>Click on constellation buttons above to select a model.</li>
+            <li>Rotate it by using your mouse/trackpad/fingers to view it in 3D.</li>
+            <li>Click on any star to learn more.</li>
+            <li>Enjoy!</li>
+        </ol>`;
+
+    let instructionsHeading = `Instr<span class="sub-cursive-size lowercase heading-cursive">uctions</span>`
+
+    container.innerHTML = instructions;
+    modelName.innerHTML = instructionsHeading;
+    
+    document.getElementById( 'reset' ).addEventListener( 'click' , reset, false);
+}
 
 // create function to set the scene with renderer, camera and interactive controls
 function init ( ) {
     // init container
-    container = document.getElementById( 'canvas' );
+    container.innerHTML = "";
     parent = document.getElementById( 'model-container' );
     parent.appendChild( container );
 
@@ -830,17 +849,20 @@ function init ( ) {
 function buttons( ){
     for( let i = 0; i < button.length; i++ ){
         button[i].addEventListener( "click",function( ){
+            init();
             //remove previous constellations objects to have a space for new ones
             while ( scene.children.length > 0 ) {
                 scene.remove( scene.children[0] );
             }
-            document.querySelector("#model-name").innerHTML = constellations[i].constHtml;
+            modelName.innerHTML = constellations[i].constHtml;
             constellationData = constellations[i].data;
             createConstellation( constellationData );
             animate( );
         });
     }
 }
+
+
 
 // function to create constellations with spheres, lines and points
 function createConstellation( constellationData ) {
@@ -967,4 +989,4 @@ function onMobileTouch( event ) {
     starData( );
 }
 
- 
+
