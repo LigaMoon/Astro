@@ -46,7 +46,29 @@
         </header>
 
         <main role="main" class="flex-shrink-0">
-            <h1 name="top">This is the calculator page</h1>
+            <div class="container-flex mx-2 mx-md-5">
+                <h1 name="top" class="main-heading-size uppercase">Calcu<span class="heading-cursive main-cursive-size lowercase">lator</span></h1>
+                <p class="page-describer">
+                    Not sure what your zodiac sign is? Enter your date of birth and find out!
+                </p>
+                <div class="col-12 col-lg-10 col-xl-8 mx-auto my-2 pb-3 main-container-zodiac text-center">
+                    <h2>Enter your Date of Birth</h2>
+
+                    <div id="date-picker">
+                        <select name="month" id="month"></select>
+                        <select name="day" id="day"></select>
+                    </div>
+
+                    <div class="horoscope-date mb-2">  </div>
+
+                    <div class="zodiac-container">
+
+                    </div>
+                    <div class="zodiac-sign mx-auto">
+                       
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer mt-auto">
@@ -70,7 +92,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="./assets/scripts/main.js"></script>
-        <script src="./assets/scripts/models.js"></script>
+        <script src="./assets/scripts/calculator.js"></script>
     </body>
 </html>

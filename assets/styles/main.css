@@ -1,3 +1,5 @@
+
+
 /* import font styles */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 @import url("https://use.typekit.net/bca7kvg.css");
@@ -295,10 +297,12 @@ canvas {
         width: 400px;
         height: 400px;
     }
-}
 
 /* -------------------- ZODIAC PAGE STYLE --------------------- */
+}
 .zodiac-sign, .zodiac-sign img {
     height: 100px;
     width: 100px;
 }
+
+/* -------------------- CALCULATOR PAGE STYLE --------------------- */
