@@ -1,3 +1,5 @@
+// ------------------------ZODIAC PAGE AND HOROSCOPE API-----------------------
+
 
 let buttons = $('.graphic-button');
 //add a click event to all buttons
@@ -51,3 +53,5 @@ function changeZodiac ( zodiac ) {
 $('#model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
 
 }
+
+
