@@ -137,7 +137,7 @@ header {
     text-align: center;
 }
 
-.nav-item{
+.nav-item, .page-button, .page-button .nav-icon{
     opacity: 0.5;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -145,7 +145,7 @@ header {
     -o-transition: all 0.2s ease-in-out;
 }
 
-a .nav-icon{
+.nav-icon{
     background-image: url('../images/icons/yellow-star-new.png');
     background-size: contain;
     height: 22px;
@@ -159,9 +159,12 @@ a .nav-icon{
     -o-transition: all 0.2s ease-in-out;
 }
 
-a:hover .nav-icon, .active a .nav-icon, .nav-item:hover, .active {
+a:hover .nav-icon, .active a .nav-icon, .nav-item:hover, .active, .page-button:hover .nav-icon, .page-button:hover{
     opacity: 1;
 }
+
+
+
 
 .navbar-toggler-icon {
     background-image: url('../images/icons/hamburger-menu.png');
@@ -300,9 +303,65 @@ canvas {
 
 /* -------------------- ZODIAC PAGE STYLE --------------------- */
 }
-.zodiac-sign, .zodiac-sign img {
+.zodiac-sign, .zodiac-sign img, .constellation-sign, .constellation-sign img{
     height: 100px;
     width: 100px;
+
+    /* font-size: 3.5rem; */
 }
 
+
+
+.zodiac-sign, .constellation-sign{
+    border: 1px solid #FFFFD6;
+    border-radius: 1rem;
+    margin: 2rem auto 1rem;
+}
+
+/* .zodiac-sign p, .constellation-sign p */
+
 /* -------------------- CALCULATOR PAGE STYLE --------------------- */
+
+.page-button {
+    border: none;
+    outline: none;
+    background: inherit;
+    color: inherit;
+    margin: 0.5rem 32px 0.5rem 0;
+}
+
+.page-button div {
+    margin: 0 0.5rem;
+}
+
+
+#month, #day {
+    border:  1px solid #FFFFD6;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 12rem;
+    background-color: inherit;
+    color: inherit;
+    outline: none;
+    margin: 2rem 1rem;
+    padding: 0.25rem;
+
+}
+
+.zodiac-container {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-image: 
+    linear-gradient(to left,
+        rgba(0, 0, 0, 0), 
+      #FFFFD6,
+      rgba(0, 0, 0, 0)) 1 0%;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.placeholder {
+    font-size: 4rem;
+    margin: 0 auto;
+
+}
