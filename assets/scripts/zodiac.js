@@ -6,7 +6,6 @@ let buttons = $('.graphic-button');
 buttons.on('click', function( ) {
    let zodiac = $(this).attr('id');
     newRequest(zodiac);
-    changeZodiac ( zodiac );
 })
 
 // http request function
@@ -43,15 +42,5 @@ function getData( description, number, color, zodiacDate ) {
 }
 
 
-function changeZodiac ( zodiac ) {
-    $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the Capricornus zodiac sign">`);
-    
-    let halfIndex = Math.round(zodiac.length / 2);
-    let leftText = zodiac.slice(0, halfIndex);
-    let rightText = zodiac.slice(halfIndex, zodiac.length);
-
-$('#model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
-
-}
 
 

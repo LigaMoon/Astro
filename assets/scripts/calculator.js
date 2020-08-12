@@ -109,7 +109,8 @@ const calculator = ()=> {
         zodiacSigns.forEach( sign => {
             if( dateValue >= sign.startDate && dateValue <= sign.endDate) {
                 let signName = sign.name;
-                changeZodiac( signName );
+                changeTitle( signName );
+                changeGraphic( signName );
             }
         });
     });
@@ -119,16 +120,16 @@ const calculator = ()=> {
 calculator ();
 
 
-function changeZodiac ( zodiac ) {
-    $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the ${zodiac} zodiac sign">`);
-    $('.constellation-sign').html(`<img src="./assets/images/constellations/${zodiac}_yellow.PNG" alt="A graphic of the ${zodiac} constellation sign">`);
+// function changeZodiac ( zodiac ) {
+//     $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the ${zodiac} zodiac sign">`);
+//     $('.constellation-sign').html(`<img src="./assets/images/constellations/${zodiac}_yellow.PNG" alt="A graphic of the ${zodiac} constellation sign">`);
     
-    let halfIndex = Math.round(zodiac.length / 2);
-    let leftText = zodiac.slice(0, halfIndex);
-    let rightText = zodiac.slice(halfIndex, zodiac.length);
+//     let halfIndex = Math.round(zodiac.length / 2);
+//     let leftText = zodiac.slice(0, halfIndex);
+//     let rightText = zodiac.slice(halfIndex, zodiac.length);
 
-$('.model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
-}
+// $('.model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
+// }
 
 
 

@@ -69,6 +69,10 @@ h1, h2 {
     font-size: 1rem;
 }
 
+.sub-sub-heading-size {
+    font-size: 1.25rem;
+}
+
 .main-heading-size, .sub-heading-size {
     margin: 1rem 0 ;
 

@@ -771,23 +771,23 @@ var sagittarius = [
 
 // add all constellations as objects into one array
 var constellations = [
-    {constName: "capricornus", data: capricornus, constHtml: 'Capri<span class="sub-cursive-size lowercase heading-cursive">cornus</span>'},
-    {constName: "aquarius", data: aquarius, constHtml: 'Aqua<span class="sub-cursive-size lowercase heading-cursive">rius</span>'},
-    {constName:"pisces", data: pisces, constHtml: 'Pis<span class="sub-cursive-size lowercase heading-cursive">ces</span>'},
-    {constName:"aries", data: aries, constHtml: 'Ar<span class="sub-cursive-size lowercase heading-cursive">ies</span>'},
-    {constName:"taurus", data: taurus, constHtml: 'Tau<span class="sub-cursive-size lowercase heading-cursive">rus</span>'},
-    {constName:"gemini", data: gemini, constHtml: 'Gemi<span class="sub-cursive-size lowercase heading-cursive">ni</span>'},
-    {constName:"cancer", data: cancer, constHtml: 'Can<span class="sub-cursive-size lowercase heading-cursive">cer</span>'},
-    {constName:"leo", data: leo, constHtml: 'Le<span class="sub-cursive-size lowercase heading-cursive">o</span>'},
-    {constName:"virgo", data: virgo, constHtml: 'Vir<span class="sub-cursive-size lowercase heading-cursive">go</span>'},
-    {constName:"libra", data: libra, constHtml: 'Lib<span class="sub-cursive-size lowercase heading-cursive">ra</span>'},
-    {constName:"scorpius", data: scorpius, constHtml: 'Scor<span class="sub-cursive-size lowercase heading-cursive">pius</span>'},
-    {constName:"sagittarius", data: sagittarius, constHtml: 'Sagitt<span class="sub-cursive-size lowercase heading-cursive">arius</span>'}
+    {constName: "capricornus", data: capricornus},
+    {constName: "aquarius", data: aquarius},
+    {constName:"pisces", data: pisces},
+    {constName:"aries", data: aries},
+    {constName:"taurus", data: taurus},
+    {constName:"gemini", data: gemini},
+    {constName:"cancer", data: cancer},
+    {constName:"leo", data: leo},
+    {constName:"virgo", data: virgo},
+    {constName:"libra", data: libra},
+    {constName:"scorpius", data: scorpius},
+    {constName:"sagittarius", data: sagittarius}
 ];    
 
 var container = document.getElementById( 'canvas' );
-var modelName = document.querySelector("#model-name");
-let button = document.getElementsByClassName("graphic-button");
+var modelName = document.querySelector( '.model-name' );
+let button = document.getElementsByClassName( 'graphic-button' );
 
 // init( );
 reset ( );
@@ -854,7 +854,8 @@ function buttons( ){
             while ( scene.children.length > 0 ) {
                 scene.remove( scene.children[0] );
             }
-            modelName.innerHTML = constellations[i].constHtml;
+            // changeTitle( constellations[i].constName );
+            // modelName.innerHTML = constellations[i].constHtml;
             constellationData = constellations[i].data;
             createConstellation( constellationData );
             animate( );
@@ -988,5 +989,14 @@ function onMobileTouch( event ) {
     starBrightness( );
     starData( );
 }
+
+// function changeTitle ( name ) {
+//     let halfIndex = Math.round( name.length / 2 );
+//     let leftText = name.slice( 0, halfIndex );
+//     let rightText = name.slice( halfIndex, name.length );
+
+//     modelName.innerHTML = `${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`;
+// }
+
 
 
