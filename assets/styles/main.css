@@ -163,7 +163,7 @@ header {
     -o-transition: all 0.2s ease-in-out;
 }
 
-a:hover .nav-icon, .active a .nav-icon, .nav-item:hover, .active, .page-button:hover .nav-icon, .page-button:hover{
+a:hover .nav-icon, .active a .nav-icon, .nav-item:hover, .active, .page-button:hover .nav-icon, .page-button:hover, .astro-about-heading:hover, .astro-about-heading:hover .nav-icon{
     opacity: 1;
 }
 
@@ -304,9 +304,8 @@ canvas {
         width: 400px;
         height: 400px;
     }
-
-/* -------------------- ZODIAC PAGE STYLE --------------------- */
 }
+/* -------------------- ZODIAC PAGE STYLE --------------------- */
 .zodiac-sign, .zodiac-sign img, .constellation-sign, .constellation-sign img{
     height: 100px;
     width: 100px;
@@ -367,5 +366,59 @@ canvas {
 .placeholder {
     font-size: 4rem;
     margin: 0 auto;
+}
 
+/* -------------------- CALCULATOR PAGE STYLE --------------------- */
+.description-container {
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.astro-about-description {
+    display: none;
+    text-align: justify;
+}
+
+@media screen and (min-width:576px) {
+    .description-container {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .description-container {
+        align-items: center;
+        height: 400px;
+    }
+}
+
+
+.description-active {
+    display: block;
+}
+
+.astro-about-heading {
+    opacity: 0.5;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+
+.heading-active{
+    text-align: center;
+    font-size: 3.0rem;
+    opacity: 1;
+}
+
+
+
+.heading-active .nav-icon {
+    opacity: 1;
+    height: 27px;
+    width: 18px;
 }
