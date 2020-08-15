@@ -1,11 +1,11 @@
+starIcon();
+
 
 $( '.graphic-button').click( function() {
     let name = $( this ).prev().text();
     changeTitle( name );
     changeGraphic ( name );
 });
-
-
 
 function changeGraphic ( name ) {
     zodiac = name.toLowerCase();
@@ -19,4 +19,13 @@ function changeTitle( name ) {
     let leftText = name.slice(0, halfIndex);
     let rightText = name.slice(halfIndex, name.length);
     $('.model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
+}
+
+// Append star icons to all star buttons on all pages
+function starIcon( ) {
+    let starButton = $( '.star-button' );
+    starButton.each(function() {
+       let buttonValue = $(this).text();
+       $(this).html(`<div class="nav-icon"></div>${buttonValue}`);
+    });
 }
