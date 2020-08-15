@@ -99,16 +99,19 @@ h1, h2 {
 }
 
 /* button styles */
-.star-button {
+.star-button, .opacity {
     opacity: 0.5;
-    margin-right: 32px;
     transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
 }
 
-.star-button:hover, .star-button:hover .nav-icon {
+.star-button {
+    margin-right: 32px;
+}
+
+.star-button:hover, .star-button:hover .nav-icon, .opacity:hover {
     opacity: 1;
 }
 
@@ -210,17 +213,6 @@ a:hover .nav-icon, .active a .nav-icon, .active .nav-link, .astro-about-heading:
 /* -------------------- FOOTER --------------------- */
 footer {
     border-top: 1px solid #FFFFD6;
-}
-
-.footer-item{
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-.footer-item:hover {
-    transform: scale(1.2)
 }
 
 /* -------------------- CONSTELLATIONS AND ZODIAC PAGE COMMON STYLES --------------------- */
