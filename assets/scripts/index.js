@@ -12,3 +12,4 @@ astroHeading.click(function(){
     $('.astro-about-description').removeClass('description-active').hide();
     $(newId).hide().fadeIn(1500).addClass('description-active');
 })
+

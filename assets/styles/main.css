@@ -5,6 +5,11 @@
 @import url("https://use.typekit.net/bca7kvg.css");
 
 /* -------------------- COMMON STYLES ACCROSS ALL PAGES --------------------- */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +33,10 @@ button:focus{
 
 h1, h2 {
     text-align: center;
+}
+
+.container {
+    max-width: 100%;
 }
 
 /* text styles */
@@ -378,7 +387,7 @@ canvas {
 
 .astro-about-description {
     display: none;
-    text-align: justify;
+    text-align: center;
 }
 
 @media screen and (min-width:576px) {
@@ -408,17 +417,80 @@ canvas {
     -o-transition: all 0.3s ease-in-out;
 }
 
-
 .heading-active{
     text-align: center;
     font-size: 3.0rem;
     opacity: 1;
 }
 
-
-
 .heading-active .nav-icon {
     opacity: 1;
     height: 27px;
     width: 18px;
+}
+
+.astro-main-describer {
+    width: 300px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.astro-heading-size {
+    font-size: 4rem;
+}
+
+.astro-sub-container{
+    background-image: url('../images/icons/yellow-star-new.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 30px;
+}
+
+.star-button {
+    opacity: 0.5;
+    font-size: 1.25rem;
+    margin-right: 32px;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+.star-button:hover, .star-button:hover .nav-icon {
+    opacity: 1;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .astro-main-container {
+        height: 100vh;
+    }
+
+    #star-bkg {
+        background-image: url('../images/icons/yellow-star-new-bigger.png');
+        background-repeat: no-repeat;
+        background-size: 200px 300px;
+        background-position: left 50% top 25%;
+    }
+    .astro-sub-container {
+        background: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .astro-heading-size {
+        font-size: 5.5rem;
+    }
+    #star-bkg {
+        background-size: 300px 450px;
+    }
+    .astro-main-describer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:567px) {
+
 }
