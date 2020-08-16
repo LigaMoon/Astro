@@ -235,6 +235,9 @@ footer {
 
 .page-connector {
     font-size: 1.25rem;
+}
+
+.page-connector a {
     white-space: nowrap;
 }
 
