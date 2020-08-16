@@ -294,10 +294,10 @@ canvas {
     box-shadow: 3px 3px 20px rgba(225, 225, 225, 0.7);
 }
 
-#reset {
+#reset, #instructions {
     display: block;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background: none;
     border: none;
     outline: none;
@@ -311,6 +311,9 @@ canvas {
     #canvas {
         width: 400px;
         height: 400px;
+    }
+    #reset, #instructions {
+        font-size: 1.5rem;
     }
 }
 /* -------------------- ZODIAC PAGE STYLE --------------------- */

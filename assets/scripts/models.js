@@ -789,13 +789,16 @@ var constellations = [
 var container = document.getElementById( 'canvas' );
 var modelName = document.querySelector( '.model-name' );
 let button = document.getElementsByClassName( 'graphic-button' );
+let starName = document.getElementById( 'star-name' );
+let starType = document.getElementById( 'star-type' );
 
 // init( );
-reset ( );
+instructions ( );
 buttons( );
 
-function reset ( ) {
-    let instructions = `<ol>
+// Function to display instructions when page is opened and on demand
+function instructions ( ) {
+    let instructionText = `<ol>
             <li>Click on constellation buttons above to select a model.</li>
             <li>Rotate it by using your mouse/trackpad/fingers to view it in 3D.</li>
             <li>Click on any star to learn more.</li>
@@ -804,10 +807,10 @@ function reset ( ) {
 
     let instructionsHeading = `Instr<span class="sub-cursive-size lowercase heading-cursive">uctions</span>`
 
-    container.innerHTML = instructions;
+    container.innerHTML = instructionText;
     modelName.innerHTML = instructionsHeading;
     
-    document.getElementById( 'reset' ).addEventListener( 'click' , reset, false);
+    document.getElementById( 'instructions' ).addEventListener( 'click' , instructions, false);
 }
 
 // create function to set the scene with renderer, camera and interactive controls
@@ -844,6 +847,9 @@ function init ( ) {
     window.addEventListener( 'mousemove', raycast, false );
     container.addEventListener( 'click', starDisplay, false );
     container.addEventListener( 'touchstart', onMobileTouch, false );
+    document.getElementById( 'reset' ).addEventListener( 'click', reset, false);
+
+    clearData( );
 }
 
 // function to implement button functionality
@@ -929,6 +935,22 @@ function constDistance ( constDist ) {
     let distance = `${constDist} Light-Years*`
 
     document.getElementById( 'constellation-distance' ).innerText = distance;
+}
+
+// Function to clear data in the right container after each constellation is selected
+function clearData( ) {
+    starName.innerText = "-";
+    starType.innerText = "-";
+}
+
+// Reset Function to reset the constellation view and clear star data
+function reset( ) {
+    container.innerHTML = "";
+    
+    init ( );
+    changeTitle ( constellationName );
+    createConstellation( constellationData );
+    animate( );
 }
 
 // initialise normalized coordinates on click or hover for a mouse
