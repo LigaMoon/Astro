@@ -233,27 +233,19 @@ footer {
     margin-bottom: 0.25rem;
 }
 
+.page-connector {
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+
 .graphic-button-container {
     max-width: 300px;
     margin: 0 auto;
 }
 
-.page-connector {
-    font-size: 1.25rem;
-}
 
-.page-connector a {
-    white-space: nowrap;
-    opacity: 0.5;
-    transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-}
 
-.page-connector a:hover {
-    opacity: 1;
-}
+
 
 @media screen and (min-width:576px) {
     .graphic-button-container {
