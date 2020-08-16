@@ -1,5 +1,4 @@
 
-
 /* import font styles */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 @import url("https://use.typekit.net/bca7kvg.css");
@@ -133,6 +132,17 @@ h3 .cursive {
     -o-transition: all 0.2s ease-in-out;
 }
 
+/* gradient top-border */
+.gradient-border {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-image: 
+    linear-gradient(to left,
+        rgba(0, 0, 0, 0), 
+        #FFFFD6,
+        rgba(0, 0, 0, 0)) 1 0%;
+}
+
 /* common styles across different screen sizes */
 @media screen and (min-width:576px) {
     h1{
@@ -215,6 +225,103 @@ footer {
     border-top: 1px solid #FFFFD6;
 }
 
+/* -------------------- HOME PAGE STYLE --------------------- */
+/* home page landing section styles */
+.astro-heading {
+    font-size: 4rem;
+}
+.astro-sub-container{
+    background-image: url('../images/icons/yellow-star-new.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 30px;
+}
+
+.astro-description {
+    width: 280px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* home page about section styles */
+.astro-about-heading {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.heading-active, .heading-active .nav-icon {
+    opacity: 1;
+}
+
+.heading-active{
+    font-size: 2.25rem;
+}
+
+.heading-active .nav-icon {
+    height: 27px;
+    width: 18px;
+}
+
+.about-description-container {
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.astro-about-description {
+    display: none;
+    text-align: center;
+}
+
+.description-active {
+    display: block;
+}
+
+@media screen and (min-width:576px) {
+    .about-description-container {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .astro-main-container {
+        height: 100vh;
+    }
+    #star-bkg {
+        background-image: url('../images/icons/yellow-star-new-bigger.png');
+        background-repeat: no-repeat;
+        background-size: 200px 300px;
+        background-position: left 50% top 25%;
+    }
+    .astro-sub-container {
+        background: none;
+    }
+    .heading-active {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .astro-heading {
+        font-size: 5.5rem;
+    }
+    #star-bkg {
+        background-size: 300px 450px;
+    }
+    .astro-description {
+        font-size: 1.5rem;
+    }
+    .about-description-container {
+        align-items: center;
+        height: 400px;
+    }
+}
+
 /* -------------------- CONSTELLATIONS AND ZODIAC PAGE COMMON STYLES --------------------- */
 .graphic-button {
     padding: 0;
@@ -246,14 +353,9 @@ footer {
     margin: 0 auto;
 }
 
-
-
-
-
 @media screen and (min-width:576px) {
     .graphic-button-container {
-        max-width: 600px;
-        
+        max-width: 600px; 
     }
 }
 
@@ -363,127 +465,21 @@ canvas {
 }
 
 .zodiac-container {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-image: 
-    linear-gradient(to left,
-        rgba(0, 0, 0, 0), 
-      #FFFFD6,
-      rgba(0, 0, 0, 0)) 1 0%;
     margin: 1.5rem;
     padding: 1rem;
 }
+
+
 
 .placeholder {
     font-size: 4rem;
     margin: 0 auto;
 }
 
+
+
 /* -------------------- CALCULATOR PAGE STYLE --------------------- */
-.description-container {
-    height: 400px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.astro-about-description {
-    display: none;
-    text-align: center;
-}
-
-@media screen and (min-width:576px) {
-    .description-container {
-        height: 200px;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .description-container {
-        align-items: center;
-        height: 400px;
-    }
-}
-
-
-/* -------------------- HOME PAGE STYLE --------------------- */
-.description-active {
-    display: block;
-}
-
-.astro-about-heading {
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-.heading-active, .heading-active .nav-icon {
-    opacity: 1;
-}
-
-.heading-active{
-    font-size: 2.25rem;
-}
-
-.heading-active .nav-icon {
-    height: 27px;
-    width: 18px;
-}
-
-.astro-main-describer {
-    width: 300px;
-    font-size: 1.25rem;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.astro-heading {
-    font-size: 4rem;
-}
-
-.astro-sub-container{
-    background-image: url('../images/icons/yellow-star-new.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 30px;
-}
 
 
 
 
-@media screen and (min-width:768px) {
-    .astro-main-container {
-        height: 100vh;
-    }
-
-    #star-bkg {
-        background-image: url('../images/icons/yellow-star-new-bigger.png');
-        background-repeat: no-repeat;
-        background-size: 200px 300px;
-        background-position: left 50% top 25%;
-    }
-    .astro-sub-container {
-        background: none;
-    }
-    
-    .heading-active {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .astro-heading {
-        font-size: 5.5rem;
-    }
-    #star-bkg {
-        background-size: 300px 450px;
-    }
-    .astro-main-describer {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width:567px) {
-
-}
