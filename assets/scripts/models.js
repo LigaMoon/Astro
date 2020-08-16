@@ -3,7 +3,7 @@ var renderer, scene, camera, container, parent;
 var controls;
 var mouse = new THREE.Vector2( );
 var raycaster, intersects, INTERSECTED;
-var constellationData, cnostellationName
+var constellationData, cnostellationName, constellationDistance;
 
 // constellation data
 var capricornus = [
@@ -773,17 +773,17 @@ var sagittarius = [
 // add all constellations as objects into one array
 var constellations = [
     {constName: "capricornus", data: capricornus, distance: 39},
-    {constName: "aquarius", data: aquarius},
-    {constName:"pisces", data: pisces},
-    {constName:"aries", data: aries},
-    {constName:"taurus", data: taurus},
-    {constName:"gemini", data: gemini},
-    {constName:"cancer", data: cancer},
-    {constName:"leo", data: leo},
-    {constName:"virgo", data: virgo},
-    {constName:"libra", data: libra},
-    {constName:"scorpius", data: scorpius},
-    {constName:"sagittarius", data: sagittarius}
+    {constName: "aquarius", data: aquarius, distance: 158},
+    {constName:"pisces", data: pisces, distance: 294},
+    {constName:"aries", data: aries, distance: 776},
+    {constName:"taurus", data: taurus, distance: 490},
+    {constName:"gemini", data: gemini, distance: 550},
+    {constName:"cancer", data: cancer, distance: 590},
+    {constName:"leo", data: leo, distance: 247},
+    {constName:"virgo", data: virgo, distance: 260},
+    {constName:"libra", data: libra, distance: 85},
+    {constName:"scorpius", data: scorpius, distance: 437},
+    {constName:"sagittarius", data: sagittarius, distance: 143}
 ];    
 
 var container = document.getElementById( 'canvas' );
@@ -858,10 +858,12 @@ function buttons( ){
 
             constellationName = constellations[i].constName
             constellationData = constellations[i].data;
+            constellationDistance = constellations[i].distance;
 
             createConstellation( constellationData );
             animate( );
             capitalizeConstName( constellationName );
+            constDistance( constellationDistance );
         });
     }
 }
@@ -913,13 +915,20 @@ function onWindowResize( ){
     camera.updateProjectionMatrix( );
 } 
 
-// Fucntion to capitalize the first letter of a constellation name and display it when a graphic button is clicked
+// Function to capitalize the first letter of a constellation name and display it when a graphic button is clicked
 function capitalizeConstName ( constName ) {
     let firstLetter = constName.slice( 0, 1 );
     let capFirstLetter = firstLetter.toUpperCase( );
     let capName = capFirstLetter + constName.slice( 1, constName.length );
 
     document.getElementById( 'star-constellation' ).innerText = capName;
+}
+
+// Function to update the constellation distance from earth 
+function constDistance ( constDist ) {
+    let distance = `${constDist} Light-Years*`
+
+    document.getElementById( 'constellation-distance' ).innerText = distance;
 }
 
 // initialise normalized coordinates on click or hover for a mouse
