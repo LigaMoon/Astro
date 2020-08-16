@@ -3,6 +3,7 @@ var renderer, scene, camera, container, parent;
 var controls;
 var mouse = new THREE.Vector2( );
 var raycaster, intersects, INTERSECTED;
+var constellationData, cnostellationName
 
 // constellation data
 var capricornus = [
@@ -771,7 +772,7 @@ var sagittarius = [
 
 // add all constellations as objects into one array
 var constellations = [
-    {constName: "capricornus", data: capricornus},
+    {constName: "capricornus", data: capricornus, distance: 39},
     {constName: "aquarius", data: aquarius},
     {constName:"pisces", data: pisces},
     {constName:"aries", data: aries},
@@ -854,15 +855,16 @@ function buttons( ){
             while ( scene.children.length > 0 ) {
                 scene.remove( scene.children[0] );
             }
-            // changeTitle( constellations[i].constName );
-            // modelName.innerHTML = constellations[i].constHtml;
+
+            constellationName = constellations[i].constName
             constellationData = constellations[i].data;
+
             createConstellation( constellationData );
             animate( );
+            capitalizeConstName( constellationName );
         });
     }
 }
-
 
 
 // function to create constellations with spheres, lines and points
@@ -910,6 +912,15 @@ function onWindowResize( ){
     camera.aspect = 1;
     camera.updateProjectionMatrix( );
 } 
+
+// Fucntion to capitalize the first letter of a constellation name and display it when a graphic button is clicked
+function capitalizeConstName ( constName ) {
+    let firstLetter = constName.slice( 0, 1 );
+    let capFirstLetter = firstLetter.toUpperCase( );
+    let capName = capFirstLetter + constName.slice( 1, constName.length );
+
+    document.getElementById( 'star-constellation' ).innerText = capName;
+}
 
 // initialise normalized coordinates on click or hover for a mouse
 function normSetup ( event ){
@@ -990,13 +1001,6 @@ function onMobileTouch( event ) {
     starData( );
 }
 
-// function changeTitle ( name ) {
-//     let halfIndex = Math.round( name.length / 2 );
-//     let leftText = name.slice( 0, halfIndex );
-//     let rightText = name.slice( halfIndex, name.length );
-
-//     modelName.innerHTML = `${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`;
-// }
 
 
 
