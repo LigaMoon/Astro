@@ -328,12 +328,15 @@ footer {
     background: none;
     border: 1px solid #FFFFD6;
     border-radius: 40%;
-}
-
-.graphix-button, .graphic-button img {
     width: 75px;
     height: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+
+
 
 .page-connector {
     font-size: 1.25rem;

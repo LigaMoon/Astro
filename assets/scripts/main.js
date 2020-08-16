@@ -1,3 +1,17 @@
+var constellationList = [
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpius",
+    "Sagittarius"
+];  
 
 let heading;
 
@@ -9,19 +23,35 @@ function twoFontHeading( ) {
     })
 }
 
+function makeGraphicButtons( ) {
+    let container = $( '.constellation-button-container' );
+    constellationList.forEach( function( buttonName ) {
+        let buttonNameLowercase = buttonName.toLowerCase();
+        container.append( `
+                    <div class="col-4 col-sm-2 mb-3 text-center">
+                        <p class="mb-1 cursive">${ buttonName }</p>
+                        <button class="graphic-button  ${buttonNameLowercase}">
+                            <a href="./constellations.html#constellation-container"></a>
+                        </button>
+                    </div>` );
 
-$( '.graphic-button').click( function() {
-    let name = $( this ).prev().text();
-    heading = $( '.model-name' );
-    changeTitle( name );
-    changeGraphic ( name );
-});
+        $( `.${buttonNameLowercase}`).css('background-image',`url('assets/images/constellations/${ buttonNameLowercase }_yellow.PNG')`);
+    });
+}
+
+function buttonFunction( ) {
+    $( '.graphic-button').click( function() {
+        let name = $( this ).prev().text();
+        heading = $( '.model-name' );
+        changeTitle( name );
+        changeGraphic ( name );
+    });
+}
 
 function changeGraphic ( name ) {
     zodiac = name.toLowerCase();
     $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the ${zodiac} zodiac sign">`);
     $('.constellation-sign').html(`<img src="./assets/images/constellations/${zodiac}_yellow.PNG" alt="A graphic of the ${zodiac} constellation">`);
-    
 }
 
 function changeTitle( name ) {
@@ -49,4 +79,6 @@ function starIcon( ) {
 }
 
 starIcon( );
-twoFontHeading();
+twoFontHeading( );
+makeGraphicButtons( );
+buttonFunction( );
