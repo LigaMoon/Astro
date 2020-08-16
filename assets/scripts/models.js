@@ -805,7 +805,7 @@ function instructions ( ) {
             <li>Enjoy!</li>
         </ol>`;
 
-    let instructionsHeading = `Instr<span class="sub-cursive-size lowercase heading-cursive">uctions</span>`
+    let instructionsHeading = `Instru<span class="cursive lowercase">ctions</span>`
 
     container.innerHTML = instructionText;
     modelName.innerHTML = instructionsHeading;

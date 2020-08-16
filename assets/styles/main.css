@@ -31,10 +31,6 @@ button:focus{
     outline: none !important; 
 }
 
-h1, h2 {
-    text-align: center;
-}
-
 .container {
     max-width: 100%;
 }
@@ -56,35 +52,39 @@ h1, h2 {
     font-size: 1rem;
 }
 
-/* heading styles */
-.heading-cursive {
+.cursive {
     font-family: "elina",cursive;
     font-weight: 400;
 }
 
-.main-heading-size {
+/* heading styles */
+h1, h2, h3 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h1 {  
     font-size: 3rem;
 }
 
-.main-cursive-size {
+h1 .cursive, .astro-sub-heading {
     font-size: 2rem;
 }
 
-.sub-heading-size {
+h2, .astro-about-heading {
     font-size: 1.5rem;
 }
 
-.sub-cursive-size {
+h2 .cursive, .astro-about-heading .cursive {
     font-size: 1rem;
 }
 
-.sub-sub-heading-size {
+h3 {
     font-size: 1.25rem;
 }
 
-.main-heading-size, .sub-heading-size {
-    margin: 1rem 0 ;
-
+h3 .cursive {
+    font-size: 0.75rem;
 }
 
 /* container styles */
@@ -135,16 +135,16 @@ h1, h2 {
 
 /* common styles across different screen sizes */
 @media screen and (min-width:576px) {
-    .main-heading-size{
+    h1{
         font-size: 3.5rem;
     }
-    .main-cursive-size {
+    h1 .cursive, .astro-sub-heading{
         font-size: 2.5rem;
     }
-    .sub-heading-size {
+    h2, .astro-about-heading {
         font-size: 2rem;
     }
-    .sub-cursive-size {
+    h2 .cursive, .astro-about-heading .cursive {
         font-size: 1.5rem;
     }
     .page-describer {
@@ -154,10 +154,10 @@ h1, h2 {
 }
 
 @media screen and (min-width:992px) {
-    .main-heading-size{
+    h1 {
         font-size: 4rem;
     }
-    .main-cursive-size {
+    h1 .cursive, .astro-sub-heading {
     font-size: 3rem;
     }
     .main-container {
@@ -190,7 +190,7 @@ header {
     margin-right: 20px;
 }
 
-a:hover .nav-icon, .active a .nav-icon, .active .nav-link, .astro-about-heading:hover, .astro-about-heading:hover .nav-icon{
+a:hover .nav-icon, .active a .nav-icon, .active .nav-link, .astro-about-heading:hover, .astro-about-heading:hover .nav-icon {
     opacity: 1;
 }
 
@@ -406,27 +406,27 @@ canvas {
 }
 
 
+/* -------------------- HOME PAGE STYLE --------------------- */
 .description-active {
     display: block;
 }
 
 .astro-about-heading {
     opacity: 0.5;
-    text-align: center;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
-
-.heading-active{
-    text-align: center;
-    font-size: 3.0rem;
+.heading-active, .heading-active .nav-icon {
     opacity: 1;
 }
 
+.heading-active{
+    font-size: 2.25rem;
+}
+
 .heading-active .nav-icon {
-    opacity: 1;
     height: 27px;
     width: 18px;
 }
@@ -438,7 +438,7 @@ canvas {
     margin: 2rem auto;
 }
 
-.astro-heading-size {
+.astro-heading {
     font-size: 4rem;
 }
 
@@ -466,10 +466,14 @@ canvas {
     .astro-sub-container {
         background: none;
     }
+    
+    .heading-active {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width:992px) {
-    .astro-heading-size {
+    .astro-heading {
         font-size: 5.5rem;
     }
     #star-bkg {
