@@ -61,17 +61,35 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 ### Design
 
 
-- #### Colour scheme
-    - 
+- #### Color scheme
+    - Since the content of this website is space-related (astronomy and astrology), 
+    I aimed to create a 'night-sky' color theme. To achieve this I opted to use a dark background with light text/graphics 
+    and even darker accent color while maintaining high enough contrast for readability. 
+    I chose to keep the color scheme minimal to create a classy, timeless, and almost mysterious look and create a sense of wonder in the user. 
+    The main colors used are Prussian Blue (#1F293B), Light Goldenrod Yellow (#FFFFD6) and as an accent color, 
+    I used Rich Black FOGRA 29 (#131A27). To pick the exact shades of the colors I used  [coolors](https://coolors.co/) 
+    color palette generator.
+
+        <img src="./assets/images/readme/colorscheme.png" height="40px" />
 
 - #### Typography
-    - 
+    - The main font used across all pages is a serif type of font 'Lora' with serif as a fallback font. 
+    This font is meant to increase the quality and speed of readability to counteract possible difficulties of reading 
+    light text on a dark background.
 
-        <img src="" height="20px" />
+        <img src="./assets/images/readme/lora.png" height="20px" />
 
+    - The secondary font used is a decorative font 'Elina'. This font is used as a style choice in headings as 
+    well as an accent throughout pages. This font is cursive and very elegant and is meant to add to the classy look of the page.
+
+        <img src="./assets/images/readme/elina.png" height="20px" />
 
 - #### Imagery
-    - 
+    - I didn't use any images accross the website.
+    - The main purpose of the graphics used is be informative as they accurately illustrate the zodiac sign or the constellation in 2D.
+    The secondary purpose of minority of graphics used is decorative, such as the star on the home page. However, 
+    all the graphics were custom designed and drawn either by me or by a graphic designer 
+    Claire Schorman and were meant to elevate the design of the page.
 
 - #### Wireframes
     - Wireframes were created using Adobe Xd, however, the layout and design was fallowed very loosely and changed during the mockup stage.
