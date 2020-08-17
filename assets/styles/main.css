@@ -290,13 +290,13 @@ footer {
 
 @media screen and (min-width:768px) {
     .astro-main-container {
-        height: 100vh;
+        height: 85vh;
     }
     #star-bkg {
         background-image: url('../images/icons/yellow-star-new-bigger.png');
         background-repeat: no-repeat;
         background-size: 200px 300px;
-        background-position: left 50% top 25%;
+        background-position: left 50% top 35%;
     }
     .astro-sub-container {
         background: none;
@@ -310,8 +310,12 @@ footer {
     .astro-heading {
         font-size: 5.5rem;
     }
+    .astro-main-container {
+        height: 100vh;
+    }
     #star-bkg {
         background-size: 300px 450px;
+        background-position: left 50% top 30%;
     }
     .astro-description {
         font-size: 1.5rem;
