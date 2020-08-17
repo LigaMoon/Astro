@@ -1,5 +1,5 @@
 
-<h1 align="center"></h1>
+<h1 align="center">ASTRO</h1>
 <h1 align="center"><img src="" /></h1>
 
  <a href=""><img src="" width="25px" /></a> :point_left: Live website
@@ -8,9 +8,7 @@
  
  ## About
 
-
- 
-
+This website connects Astronomy and Astrology while highlighting unique aspects of both. It provides an entertaining way to get familiar with either through exploring 12 zodiacs and how they're represented in each field. 
 
 ## Table of Contents
 
