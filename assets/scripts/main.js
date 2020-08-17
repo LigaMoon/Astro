@@ -57,7 +57,6 @@ function zodiacButtons( container, name, nameLwrCase ) {
 }
 
 
-
 function buttonFunction( ) {
     $( '.graphic-button').click( function() {
         let name = $( this ).prev().text();
@@ -69,8 +68,8 @@ function buttonFunction( ) {
 
 function changeGraphic ( name ) {
     zodiac = name.toLowerCase();
-    $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the ${zodiac} zodiac sign">`);
-    $('.constellation-sign').html(`<img src="./assets/images/constellations/${zodiac}_yellow.PNG" alt="A graphic of the ${zodiac} constellation">`);
+    $('.zodiac-sign').html("").css('background-image',`url('assets/images/zodiac/${ zodiac }_yellowzodiac.PNG')`);
+    $('.constellation-sign').html("").css('background-image',`url('assets/images/constellations/${ zodiac }_yellow.PNG')`);
 }
 
 function changeTitle( name ) {
