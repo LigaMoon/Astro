@@ -457,6 +457,11 @@ canvas {
     padding: 0.25rem;
 }
 
+#month, #day, option {
+    background-color: #131A27;
+    color:#FFFFD6;
+}
+
 .zodiac-container {
     margin: 0.5rem;
     padding: 1rem;
