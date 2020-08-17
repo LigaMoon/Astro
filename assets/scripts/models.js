@@ -600,7 +600,7 @@ var libra = [
         type: "Blue-White Dwarf Star"
     }
 ];
-var scorpius = [
+var scorpio = [
     {
         coord: [-3.43, -2.0, -2.0],
         name: "Shaula",
@@ -782,7 +782,7 @@ var constellations = [
     {constName:"leo", data: leo, distance: 247},
     {constName:"virgo", data: virgo, distance: 260},
     {constName:"libra", data: libra, distance: 85},
-    {constName:"scorpius", data: scorpius, distance: 437},
+    {constName:"scorpio", data: scorpio, distance: 437},
     {constName:"sagittarius", data: sagittarius, distance: 143}
 ];    
 
