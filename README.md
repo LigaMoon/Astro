@@ -32,16 +32,37 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 ## User Experience (UX)
 
 ### User Stories
-- #### 
-    1. 
+- #### As a visitor looking for entertainment.
+    1. I want to easily understand the purpose and the layout of the site without additional instructions needed.
+    1. I want to intuitively navigate through the site to browse the content.
+    1. I want to be able to interact with the site engagingly.
+- #### As a visitor interested in Astronomy and constellations.
+    1. I want to easily find the relevant page.
+    1. I want to be able to navigate through different constellations easily.
+    1. I want to be able to view each constellation in 3D and interact with it.
+    1. I want to see details about starts that make up each constellation.
+    1. I want to see details about each constellation.
+- #### As a visitor interested in Astrology and zodiacs.
+    1. I want to easily find the relevant page.
+    1. I want to see more facts about each zodiac.
+    1. I want to find out what dates each zodiac corresponds to.
+    1. I want to read my horoscope.
+- #### As a returning visitor looking for the daily horoscope.
+    1. I want the site to be responsive on all devices and across all browsers.
+    1. I want to access my daily horoscope.
+    1. I want to be able to quickly access the needed information.
+- #### As a visitor looking to learn more about Astronomy, Astrology, or both.
+    1. I want the text to be easily readable.
+    1. I want concise information that's easily understandable.
+    1. I want to be able to find out what is my zodiac.
+    1. I want to understand what is the difference and the connection between Astrology and Astronomy.
+
 
 ### Design
 
 
 - #### Colour scheme
     - 
-
-        <img src="" height="40px" />
 
 - #### Typography
     - 
