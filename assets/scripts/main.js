@@ -9,7 +9,7 @@ var constellationList = [
     "Leo",
     "Virgo",
     "Libra",
-    "Scorpius",
+    "Scorpio",
     "Sagittarius"
 ];  
 
@@ -24,20 +24,39 @@ function twoFontHeading( ) {
 }
 
 function makeGraphicButtons( ) {
-    let container = $( '.constellation-button-container' );
+    let containerConstellations = $( '.constellation-button-container' );
+    let zodiacContainer = $( '.zodiac-button-container' );
     constellationList.forEach( function( buttonName ) {
         let buttonNameLowercase = buttonName.toLowerCase();
-        container.append( `
-                    <div class="col-4 col-sm-2 mb-3 text-center">
-                        <p class="mb-1 cursive">${ buttonName }</p>
-                        <button class="graphic-button  ${buttonNameLowercase}">
-                            <a href="./constellations.html#constellation-container"></a>
-                        </button>
-                    </div>` );
-
-        $( `.${buttonNameLowercase}`).css('background-image',`url('assets/images/constellations/${ buttonNameLowercase }_yellow.PNG')`);
+        constellationButtons( containerConstellations, buttonName, buttonNameLowercase );
+        zodiacButtons( zodiacContainer, buttonName, buttonNameLowercase);
     });
 }
+
+function constellationButtons( container, name, nameLwrCase ) {
+    container.append( `
+        <div class="col-4 col-sm-2 mb-3 text-center">
+            <p class="mb-1 cursive">${ name }</p>
+            <button class="graphic-button  ${ nameLwrCase }">
+            </button>
+        </div>` );
+                
+    $( `.${ nameLwrCase }`).css('background-image',`url('assets/images/constellations/${ nameLwrCase }_yellow.PNG')`);
+}
+            
+
+function zodiacButtons( container, name, nameLwrCase ) {
+    container.append( `
+        <div class="col-4 col-sm-2 mb-3 text-center">
+            <p class="mb-1 cursive">${ name }</p>
+            <button class="graphic-button" id="${ nameLwrCase }">
+            </button>
+        </div>` );
+
+    $( `#${ nameLwrCase }`).css('background-image',`url('assets/images/zodiac/${ nameLwrCase }_yellowzodiac.PNG')`);
+}
+
+
 
 function buttonFunction( ) {
     $( '.graphic-button').click( function() {
