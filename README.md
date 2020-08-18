@@ -214,15 +214,49 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 - [JavaScript](https://www.javascript.com/)
 
 ### Frameworks, Libraries and Programs Used
-
-- 
-
+- [Three.js](https://threejs.org/) - Three.js docs and examples were used to create the constellation models and implement the interactiveness of them. Even though the functionality of most pages was written using jQuery, the models were coded using plain JavaScript. This is due to all docs and examples being in plain JavaScript.
+- [RapidAPI](https://rapidapi.com/) - Used to find Astrology API that was used for daily horoscope and other zodiac data.
+- [jQuery](https://jquery.com/) - Used in writing most of the functionality in 'Home', 'Zodiac' and 'Calculator' pages. Additionally, some of the clickable elements in Bootstrap, such as collapsable 'hamburger' navbar and collapse element, uses jQuery as well.
+- [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsable 'hamburger' navbar and collapse element.
+- [Bootstrap v4.5.0](https://getbootstrap.com/) - Used for the responsive layout as well as the navigation bar, hamburger menu and the footer.
+- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social media icons at the bottom of the page.
+- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Lora' font in the main.css file.
+- [Adobe Fonts](https://fonts.adobe.com/) - Adobe Fonts was used to import 'Elina' font which was the accent font in this project and cannot be found on Google Fonts website.
+- [Git](https://git-scm.com/) - Git was used to allowing for tracking of any changes in the code and version control.
+- [GitPod](https://www.gitpod.io/) - GitPod, connected to GitHub, hosted the coding space and allowed the projected to be committed to the Github repository.
+- [Github](https://github.com/) - GitHub is used to host the project files and publish the live website by using Git Pages.
+- [Lightroom](https://www.adobe.com/ie/products/photoshop-lightroom.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE:G:s&s_kwcid=AL!3085!3!394412108599!e!!g!!lightroom) - Lightroom was used to edit and resize all images.
+- [Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE:G:s&s_kwcid=AL!3085!3!340674288378!e!!g!!photoshop) - Photoshop was used to create the background graphic for the Landing page as well as the favicon.
+- [Adobe Xd](https://www.adobe.com/ie/products/xd.html) - Adobe Xd was used to create wireframes and mockups.
 <a name="#testing"></a>
 ## Testing
 
  ### Functionality Testing
-- #### 
-    - 
+- #### Navigation bar
+    - When the brand name 'Stay' is clicked, it brings the user to the Home Page. This has been tested on both desktop and mobile and from all pages.
+    - All links are working and have been tested.
+    - The hamburger menu appears on screen sizes smaller than 768px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
+    - The navigation bar stays at the top of the page on all screen sizes.
+- #### Footer
+    - Footer is always located at the bottom of the page regardless of the content amount. This was tested by removing all content from any given page.
+    - Then the social links are clicked, they open the relevant social media page in a new tab.
+    - When the 'About' link is clicked, it opens a modal that layers on top of the current page and can be closed by clicking on the 'x' or anywhere outside of the modal.
+    - When the 'Contact' link is clicked, it opens a modal of a form element.
+        - Name is required and has to be at least two characters long.
+        - Email field is required and has to be in the correct format.
+        - Text field has to contain at least two characters.
+        - When 'Submit' is clicked (given all fields have been filled out) the page the user was on is refreshed.
+- #### The dynamic 
+
+-  #### All external links were tested to make sure they open up the correct pages in new tabs
+    - All social links in the footer bring the user to the relevant social pages
+    - All picture links in the Happy, Entertained and Informed pages, open the relevant website to let the user find out more information
+    - All links in the Active page open a YouTube video of the clicked exercise
+    - Both links in the top section of the Informed page bring the user to the correct sites
+- #### All internal links were tested to make sure that all pages are correctly connected 
+    - Landing Page brings the user to the Home Page
+    - Navigation links bring the user to the relevant pages
+    - Brand word located in the navigation bar always brings the user to the home page
 
 
 
