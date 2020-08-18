@@ -87,6 +87,18 @@ let zodiacSigns = [
 let dateValue;
 
 
+// function to refresh the fields when page is navigated to - provided by my mentor
+function refresh() {
+    window.addEventListener( "pageshow", function ( event ) {
+        var historyPage = event.persisted ||
+        ( typeof window.performance != "undefined" &&
+        window.performance.navigation.type === 2 );
+        if ( historyPage ) {
+            // Handle page restore.
+            window.location.reload();
+        }
+    });
+}
 
 const calculator = ()=> {
     makeDropdowns();
@@ -121,7 +133,7 @@ const calculator = ()=> {
     });
 }
 
-
+refresh();
 calculator ();
 
 
@@ -151,8 +163,8 @@ function createMonth ( cal ) {
 
 function createDay ( cal ) {
     $( '#month' ).change( function( ) {
-       let returnedMonth =  $( this ).val( );
-       $( '#day' ).html("");
+        let returnedMonth =  $( this ).val( );
+        $( '#day' ).html("");
        if( returnedMonth === "Month") {
             $( '#day' ).append(`<option>Please Select Valid Month</option`);
        } else {
