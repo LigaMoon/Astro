@@ -85,31 +85,39 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
         <img src="./assets/images/readme/elina.png" height="20px" />
 
 - #### Imagery
-    - I didn't use any images accross the website.
-    - The main purpose of the graphics used is be informative as they accurately illustrate the zodiac sign or the constellation in 2D.
-    The secondary purpose of minority of graphics used is decorative, such as the star on the home page. However, 
+    - The main purpose of the graphics used is to be informative as they accurately illustrate the zodiac sign or the constellation in 2D.
+    The secondary purpose of the minority of graphics used is decorative, such as the star on the home page. However, 
     all the graphics were custom designed and drawn either by me or by a graphic designer 
     Claire Schorman and were meant to elevate the design of the page.
+    - No pictures were used in making of this website.
 
 - #### Wireframes
-    - Wireframes were created using Adobe Xd, however, the layout and design was fallowed very loosely and changed during the mockup stage.
-    - [Mobile Wireframes]() :point_left:
+    - Wireframes were created using Adobe Xd
+    - [Mobile Wireframes](https://xd.adobe.com/view/2a79d65c-c500-4c4f-9b90-1c46911d4481-7f2a/) :point_left:
 
-         <img src="" />
+         <img src="./assets/images/readme/wireframes-mobile.png" />
 
-    - [Tablet Wireframes]() :point_left:
+    - [Tablet Wireframes](https://xd.adobe.com/view/ba88fbbf-32f5-4e31-a0ba-96a6c10e95c6-efdb/) :point_left:
 
-         <img src="" />
+         <img src="./assets/images/readme/wireframes-tablet.png" />
 
-    - [Desktop Wireframes]() :point_left:
+    - [Desktop Wireframes](https://xd.adobe.com/view/671f703f-ebfc-4020-ba17-d3a65926fb3b-324c/) :point_left:
 
-         <img src="" />
+         <img src="./assets/images/readme/wireframes-desktop.png" />
 
 - #### Mockups
-    - Mockups were also created using Adobe Xd and the final design of the webpage is very closely related hence I haven't included any screenshots.
-    - [Mobile Wireframes]() :point_left:
-    - [Tablet Wireframes]() :point_left
-    - [Desktop Wireframes]() :point_left:
+    - Mockups were created using Adobe Xd
+    - [Mobile Wireframes](https://xd.adobe.com/view/3259bb2c-4e92-4f22-b7d1-f9e940c483b3-670a/) :point_left:
+
+         <img src="./assets/images/readme/mockups-mobile.png" />
+
+    - [Tablet Wireframes](https://xd.adobe.com/view/6acb81ec-f1bd-4a86-a230-8b36916d4c4d-3f98/) :point_left:
+
+         <img src="./assets/images/readme/mockups-tablet.png" />
+
+    - [Desktop Wireframes](https://xd.adobe.com/view/be323bd5-5574-4702-9f7b-52ae8c3de42e-eb61/) :point_left:
+
+         <img src="./assets/images/readme/mockups-desktop.png" />
 
 
  <a name="features"></a>
