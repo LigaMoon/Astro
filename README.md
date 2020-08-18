@@ -120,20 +120,77 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
          <img src="./assets/images/readme/mockups-desktop.png" />
 
 
+
  <a name="features"></a>
 ## Features
 
 ### Existing Features
 
 #### Common Features Across All Pages
-- [x] **X**
-    - 
+- [x] **Header** - allows user to easily navigate across all pages
+    - The header itself is positioned to always be visible (positioned absolutely using Bootstrap 'sticky-top' class) at the top of the screen (mobile, tablet, and desktop) which allows visitors to find it quickly.
+    - The brand logo as well as brand word is positioned on the left and is visible on all pages, it serves as a home page link so the user can find her/his way back if needed.
+    - Navigation is included in the header to let the user intuitively locate it.
+    - Navigation links become lighter and have a star icon become visible (only in desktop) when hovered over. This lets the visitor know that it is clickable.
+    - The navigation link, matching the page that the user is visiting, stays 'active'(which matches the hover effect from the previous point) to let the user quickly establish which page she/he is visiting.
+    - Navigation links collapse in a personalized hamburger menu when viewed in mobile sizes.
+    - Colors have been chosen with optimum contrast in mind to be pleasant to the eye.
+- [x] **Headings**
+    - All main heading styles have been applied using JavaScript ([main.js](https://github.com/liigalized/astro/blob/master/assets/scripts/main.js)) to avoid cluttering HTML and provide consistency throughout all pages.
+- [x] **Links/buttons**
+    - All links and buttons have been styled uniformly to let the user know without hovering over that those are clickable.
+    - When the user hovers over, the link/button text increase in brightness.
+    - Most of the links/buttons (with two purposeful exceptions), have the page brand star icon become visible on the left side when hovered over.
+    - The star graphic on all links is generated in JavaScript ([main.js](https://github.com/liigalized/astro/blob/master/assets/scripts/main.js)) to avoid cluttering HTML file and provide consistency throughout all pages.
+- [x] **Responsiveness**
+    - All Pages are responsive and provide the same functionality regardless of the viewport size.
+- [x] **Accessibility**
+    - There are no flashing images or sounds to hinder the user experience.
+    - All button graphics used, have been added as a background to prevent screen readers from having to read out each image description.
+- [x] **Graphic Buttons**
+    - When a button, displaying a constellation or zodiac sign, is clicked, it changes the heading in the main container and the icon related to the main container (if any).
+    - This functionality is done by using JavaScript ([main.js](https://github.com/liigalized/astro/blob/master/assets/scripts/main.js))
+    - Graphic buttons are generated using JavaScript ([main.js](https://github.com/liigalized/astro/blob/master/assets/scripts/main.js))
+- [x] **Footer**
+    - Footer has been designed, using Bootstrap, to always be at the bottom of the page, regardless of the amount of content. This aids the overall user experience.
+    - Content has been broken down into two lines to avoid overcrowding.
+    - Social links have been grouped to signify their connection and, once clicked, redirect the user to a new page.
+    - All links when hovered over an increase in brightness (opacity) to intuitively signal that they are clickable.
+    - 'About' button linked to the 'About' section on the 'Home' page.
 
 
 ### Specific to Pages
-- [x] **X**
-    - 
-
+- [x] **Home**
+    - The main background star graphic helps to set the mood of the website and acts as a separator for the astrology and astronomy sections. It changes size as the background is resized.
+    - Short descriptions of what the 'Constellations' and the 'Codiac signs' pages feature, as well as the call-to-action button attached for the user to be able to easily navigate if they are interested.
+    - 'About' section providing more information about what Astrology and Astronomy are and the connection between both.
+    - Clickable headings of each 'About' topic, when clicked, the relevant paragraph is displayed while others are hidden. This is achieved using JavaScript ([index.js](https://github.com/liigalized/astro/blob/master/assets/scripts/index.js))
+- [x] **Constellations**
+    - Short page describer that provides the user some information about the page and what the models are.
+    - Graphic buttons displaying a 2D view of each constellation, that let the user select which constellation model they wish to view.
+    - Instructions for the user on how to use the 3D models.
+    - 3D models of each constellation that are interactive (clickable, zoomable, draggable).
+    - Each star allows the user to click on it to display more information in the data container next to it.
+    - When hovered over, each star increases in brightness to indicate which star is hovered over.
+    - Instructions button at the bottom fo the 3D model container to allow the user to easily find the instructions in case they are unsure how to operate the model.
+    - A Reset button allows the user to easily reset the original view of the constellation in case it has been distorted too much.
+    - Data container dynamically changes information regarding what constellation and what star has been, the reset button resets the star data as well.
+    - A short paragraph at the bottom of the page containing a link so that the user can easily navigate to the zodiac page.
+    - All functionality (apart from the links) has been done in JavaScript ([models.js](https://github.com/liigalized/astro/blob/master/assets/scripts/models.js)) and the models have been created using the [Three.js](https://threejs.org/).
+- [x] **Zodiac Signs**
+    - Short page describer that provides the user information about the zodiac signs.
+    - Graphic buttons displaying each zodiac sign, that lets the user select which zodiac sign they would like to learn more about.
+    - A dynamic heading and icon that is populated once the user selects the zodiac sign. This lets the user immediately get a validation that the correct zodiac sign has been selected.
+    - Daily Horoscope, Lucky Number, and Lucky Color fields that are populated using (aztro API)[https://rapidapi.com/sameer.kumar/api/aztro].
+    - Daily Horoscope is updated daily which provides the user with a reason to return to the website daily.
+    - A short paragraph at the bottom of the page containing a link so that the user can easily navigate to the zodiac page.
+    - All functionality is achieved by using JavaScript([zodiac.js](https://github.com/liigalized/astro/blob/master/assets/scripts/zodiac.js)).
+- [x] **Calculator**
+    - This page allows the user to find out what zodiac sign they are, in case they are not familiar with it.
+    - Month selector and Day selector that is populated with a precise number of days depending on what month the user selected. This helps the user to chose an accurate date.
+    - A call-to-action button that displays the relevant zodiac/constellation name, zodiac sign and constellation sign at the bottom.
+    - Zodiac sign and Constellation sign graphics are buttons that bring the user to the relevant page, moreover, there are page buttons underneath the graphics for added clarity.
+    - The functionality was achieved by using JavaScript ([calculator.js](https://github.com/liigalized/astro/blob/master/assets/scripts/calculator.js))
 
 ### Future Features
  
