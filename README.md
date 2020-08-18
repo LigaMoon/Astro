@@ -233,31 +233,51 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 
  ### Functionality Testing
 - #### Navigation bar
-    - When the brand name 'Stay' is clicked, it brings the user to the Home Page. This has been tested on both desktop and mobile and from all pages.
+    - When the brand name 'ASTRO' is clicked, it brings the user to the Home Page. This has been tested on desktop, tablet, and mobile views and from all pages.
+    - When the brand star is clicked, it brings the user to the Home Page. Tested as mentioned in the previous point.
     - All links are working and have been tested.
     - The hamburger menu appears on screen sizes smaller than 768px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
     - The navigation bar stays at the top of the page on all screen sizes.
 - #### Footer
     - Footer is always located at the bottom of the page regardless of the content amount. This was tested by removing all content from any given page.
-    - Then the social links are clicked, they open the relevant social media page in a new tab.
-    - When the 'About' link is clicked, it opens a modal that layers on top of the current page and can be closed by clicking on the 'x' or anywhere outside of the modal.
-    - When the 'Contact' link is clicked, it opens a modal of a form element.
-        - Name is required and has to be at least two characters long.
-        - Email field is required and has to be in the correct format.
-        - Text field has to contain at least two characters.
-        - When 'Submit' is clicked (given all fields have been filled out) the page the user was on is refreshed.
-- #### The dynamic 
-
+    - When the social links are clicked, they open the relevant social media page in a new tab.
+    - When the 'About' link is clicked, it brings the user to the 'About' section on the Home page. This has been tested on all pages.
+- #### The dynamic text change on the Home Page
+    - When the user clicks on any of the headings (Astronomy, Astrology, or Connection), the selected heading smoothly increases in size, the previous description fades out, the relevant new description fades in.
+- #### The Graphic Buttons
+    - All graphic buttons display the relevant constellation/zodiac name when clicked on.
+    - When clicked on, all graphic buttons on the 'Zodiac Sign' page display the relevant zodiac sign in the zodiac container.
+    - On the 'Constellations' page when a graphic button is clicked on, it displays the chosen 3D model and information about the constellation in the data container (name of the constellation and the distance from Earth).
+    - On the 'Zodiac Signs' page, when clicked on, it displays chosen daily horoscope, Lucky Number and Lucky Color.
+- #### 3D Constellation models
+    - Each model can be rotated, resized, and dragged. This has been tested on mobile devices, tablets, and desktops.
+    - In desktop view, When the user hovers over any given star, it's brightness increases. On mobile, a star will increase in brightness when tapped on.
+    - When a star is tapped/clicked on, its name and type are displayed in the data container.
+    - The instructions button displays the instructions when clicked/tapped.
+    - Reset button resets the view of the constellation the user was looking at, if the instructions button has been selected following a reset button, the previous constellation will be displayed.
+- #### Data container for constellation models
+    - Initially, no star specific data is being displayed until the user chooses a star by clicking/tapping after choosing a constellation.
+    - Initially, no constellation specific data is being displayed until the user chooses a constellation by clicking/tapping one of the graphic buttons.
+    - Once the user selects a constellation, it's name and distance from the earth will be displayed.
+    - Once the user selects a star, its name and type will be displayed.
+    - Reset button under the 3D models will reset the star specific data, however, not the constellation specific data as the constellation remains selected.
+- #### Data container for zodiac signs connected to the API
+    - When the user chooses a zodiac sign by clicking a graphic button, Daily Horoscope, Lucky Number and Lucky Color will be populated.
+    - The name of the zodiac as well as its image are updated as well.
+- #### Zodiac Sign calculator
+    - When the user selects a month, the day selector is updated with the precise number of days in the chosen month.
+    - If no month has been selected, the day selector will not be populated.
+    - When the user clicks on the 'Find Out' button, it populates the bottom container with relevant zodiac/constellation names and icons.
+    - Both graphic icons take the user to either the 'Constellations' page or the 'Zodiac Signs' page.
+    - Additionally, the page buttons underneath each graphic icon bring the user to the relevant pages.
+    - If the user tries to navigate back to the calculator using the 'back' button, the page refreshes to clear the previous selection.
 -  #### All external links were tested to make sure they open up the correct pages in new tabs
-    - All social links in the footer bring the user to the relevant social pages
-    - All picture links in the Happy, Entertained and Informed pages, open the relevant website to let the user find out more information
-    - All links in the Active page open a YouTube video of the clicked exercise
-    - Both links in the top section of the Informed page bring the user to the correct sites
+    - All social links in the footer bring the user to the relevant social pages that open in a new tab.
 - #### All internal links were tested to make sure that all pages are correctly connected 
-    - Landing Page brings the user to the Home Page
-    - Navigation links bring the user to the relevant pages
-    - Brand word located in the navigation bar always brings the user to the home page
-
+    - Navigation links bring the user to the relevant pages.
+    - Brand word and icon located in the navigation bar always brings the user to the home page.
+    - Links connecting the 'Constellations' page to the 'Zodiac Signs' page and vice versa work and have been tested.
+    - All page links on the 'Home' page and the 'Calculator' page are working as expected and redirect the user to the relevant pages.
 
 
 ### CSS3 validator - Pass
