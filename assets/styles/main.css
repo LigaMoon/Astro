@@ -200,7 +200,7 @@ header {
     margin-right: 20px;
 }
 
-a:hover .nav-icon, .active a .nav-icon, .active .nav-link, .astro-about-heading:hover, .astro-about-heading:hover .nav-icon {
+a:hover .nav-icon, .active a .nav-icon, .active .nav-link, .astro-about-heading:hover{
     opacity: 1;
 }
 
@@ -253,7 +253,7 @@ footer {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.heading-active, .heading-active .nav-icon {
+.heading-active{
     opacity: 1;
 }
 
@@ -261,10 +261,6 @@ footer {
     font-size: 2.25rem;
 }
 
-.heading-active .nav-icon {
-    height: 27px;
-    width: 18px;
-}
 
 .about-description-container {
     height: 400px;
