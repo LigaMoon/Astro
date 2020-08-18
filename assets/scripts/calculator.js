@@ -20,6 +20,11 @@ let zodiacSigns = [
     {
         name: 'capricorn',
         startDate: 11222,
+        endDate: 11231
+    },
+    {
+        name: 'capricorn',
+        startDate: 10101,
         endDate: 10119
     },
     {
@@ -140,7 +145,7 @@ function makeDropdowns ( ) {
 
 function createMonth ( cal ) {
     cal.forEach( function( date ) {
-        $('#month').append(`<option>${date[0]}</option`);
+        $('#month').append(`<option>${date[0]}</option>`);
     })
 }
 
