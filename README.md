@@ -95,7 +95,7 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - Wireframes were created using Adobe Xd
     - [Mobile Wireframes](https://xd.adobe.com/view/2a79d65c-c500-4c4f-9b90-1c46911d4481-7f2a/) :point_left:
 
-         <img src="./assets/images/readme/wireframes-mobile.png" />
+         <img src="./assets/images/readme/wireframes-mobile.png" height="400px" />
 
     - [Tablet Wireframes](https://xd.adobe.com/view/ba88fbbf-32f5-4e31-a0ba-96a6c10e95c6-efdb/) :point_left:
 
@@ -109,7 +109,7 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - Mockups were created using Adobe Xd
     - [Mobile Wireframes](https://xd.adobe.com/view/3259bb2c-4e92-4f22-b7d1-f9e940c483b3-670a/) :point_left:
 
-         <img src="./assets/images/readme/mockups-mobile.png" />
+         <img src="./assets/images/readme/mockups-mobile.png" height="400px"/>
 
     - [Tablet Wireframes](https://xd.adobe.com/view/6acb81ec-f1bd-4a86-a230-8b36916d4c4d-3f98/) :point_left:
 
@@ -194,7 +194,15 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 
 ### Future Features
  
-- [ ] 
+- [ ] Light website theme to cater to users who prefer viewing dark text on light backgrounds.
+        <img src="./assets/images/readme/mockups-ligh.png" />
+- [ ] Have a split home page view that would let the user move the page splitter to reveal either the Astronomy or Astrology sections.
+        <img src="./assets/images/readme/mockups-split.png" height="300px" />
+    - I have created initial mockups for both features named above ([Mobile](https://xd.adobe.com/view/414ea735-999e-4489-86fa-48abc1b58a15-141d/), [Tablet](https://xd.adobe.com/view/d2cb1b98-c3d2-4c08-862b-4897b602164b-8798/), [Desktop](https://xd.adobe.com/view/d1f04f67-190e-4729-b08d-b5b16bfdca62-84a3/))
+- [ ] On the 'Constellations' page, implement additional information (when best visible from a certain location with a map, star's distance from the Earth, brightness) of each star with the option to select 'Basic' or 'Advanced' data. This would allow users to toggle how much information they wish to see.
+- [ ] On the 'Zodiac' page, add further data about each zodiac sign, such as zodiac sign matches, mood, and user's lucky time.
+- [ ] Add a log-in option that allows the user to have an account and remember their specific details such as certain starts they are interested in, their location, and their zodiac sign.
+- [ ] Have the daily horoscope being sent to the user's e-mail if they wish so.
 
 <a name="technologies"></a>
 ## Technologies Used
