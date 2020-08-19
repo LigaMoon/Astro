@@ -336,16 +336,91 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
         <img src="./assets/images/readme/perf-test.png" height="50px"/>
 
 
-
 ### Testing User Stories 
-- #### 
-    1.
-- #### 
-    1. 
-- #### 
-    1.
-- #### 
-    1.
+- #### As a visitor looking for entertainment.
+    1. I want to easily understand the purpose and the layout of the site without additional instructions needed.
+        - The home page is simple and clear, the heading 'ASTRO' indicates that this page is space/star themed which is complemented by the use of the dark blue and light yellow color scheme. Additionally, the user can see the Star logo and the background.
+        - The Home page has clear two options to chose from with concise descriptions and Call-to-Action buttons to take the user to either page.
+        - Each page has a short description and very limited purpose which makes it easy for the user to understand what she/he can do with the site.
+        - The style of the page is kept the same which allows the user to intuitively understand the layout of each page.
+        - The footer and the header remain the same throughout the site which provides the consistency for the user to easily understand how the site works.
+    1. I want to intuitively navigate through the site to browse the content.
+        - The header and the footer are kept in line with conventional styles which lets the user access the navigation without thinking.
+        - The header is always visible at the top of the page and the user can find each page easily at any time.
+        - The active website is indicated by different formatting.
+        - All pages are displayed in the navigation bar as well as throughout the pages to provide the user with multiple points of navigation.
+        - Each page has a heading to indicate to the user what page they are on.
+    1. I want to be able to interact with the site engagingly.
+        - The Home page has an interactive About section which lets the user click on the topic of interest to display the relevant paragraph.
+        - The Constellations page has interactive 3D models that can be clicked on, zoomed-in, dragged, and rotated. Furthermore, each star can be clicked on to see more information.
+        - The Zodiac Signs page has interactive graphic buttons. They display daily horoscope, Lucky Color, and Lucky Number.
+        - The Calculator page lets the user select their birthday to calculate their zodiac sign/constellation name.
+- #### As a visitor interested in Astronomy and constellations.
+    1. I want to easily find the relevant page.
+        - The Home page clearly indicates the Call-to-Action button for the constellation page.
+        - The navigation bar has the constellation page clearly labeled.
+        - The Zodiac Signs page has a link at the bottom connecting the Zodiac Signs page and the Constellations page.
+        - The Calculator page provides the user with a Constellations page button underneath the displayed constellation name.
+        - Once the user has navigated to the Constellations page, it is easily recognizable as it has a clearly marked heading.
+    1. I want to be able to navigate through different constellations easily.
+        - All constellation buttons are clearly and neatly displayed at the top of the constellation page which allows the user to easily click and select any constellation.
+        - The name of the selected constellation is displayed above the 3D model to let the user know which constellation has been selected.
+        - The name of the constellation is displayed in the data container to further aid the recognition of which constellation has been chosen.
+    1. I want to be able to view each constellation in 3D and interact with it.
+        - Once the constellation has been chosen, the 3D model is displayed.
+        - On desktop devices, the user can interact with the model bu using a mouse/trackpad.
+        - On mobile and tablet devices the user can interact with the model by using fingers to intuitively move the model around.
+        - The constellation view can be reset by clicking the 'Reset' button.
+        - If the user needs instructions on how to use the model, these can be accessed by clicking the 'Instructions' button.
+    1. I want to see details about starts that make up each constellation.
+        - In desktop view, the user can hover over each star which will appear to be brighter to indicate which star has been hovered over.
+        - user can then click on this star, the name and the type of the star will be displayed in the data container.
+        - The user can reset this data by clicking the 'Reset' button.
+    1. I want to see details about each constellation.
+        - Once the user has selected the constellation, by clicking on one of the graphic buttons, the constellation name and distance from the earth will be displayed in the data container.
+- #### As a visitor interested in Astrology and zodiacs.
+    1. I want to easily find the relevant page.
+        - The Home page indicates the Call-to-Action button for the Zodiac Signs page.
+        - The navigation bar has the Zodiac Signs page clearly labeled.
+        - The Constellations page has a link at the bottom connecting Constellations and the Zodiac Signs page.
+        - The Calculator page provides the user with a Zodiac signs page button underneath the displayed zodiac name.
+        - Once the user has navigated to the Zodiac Signs page, it is easily recognizable as it has a clearly marked heading.
+    1. I want to see more facts about each zodiac.
+        - The user can navigate to the Zodiac Signs page and once the zodiac sign has been chosen, the bottom container is updated.
+        - The user can find their daily horoscope as well as associated Lucky Color and Lucky Number.
+    1. I want to find out what dates each zodiac corresponds to.
+        - Each Zodiac sign has the corresponding dates displayed underneath the image once the zodiac is chosen.
+        - The calculator page lets the user input any date to find out what zodiac corresponds to the specific date.
+    1. I want to read my horoscope.
+        - The user can obtain their daily horoscope by selecting their zodiac in the Zodiac Signs page or by finding their zodiac sign on the Calculator page and then navigating to the Zodiac Signs page.
+- #### As a returning visitor looking for the daily horoscope.
+    1. I want the site to be responsive on all devices and across all browsers.
+        - The website has been designed mobile-first, however, it is made to be fully functional and look great on all devices.
+        - The website has been tested on multiple browsers and devices as indicated under 'Compatibility Testing'
+    1. I want to access my daily horoscope.
+        - The daily horoscope can be accessed by clicking on the 'Zodiac Signs' button on the Home Page and selecting the zodiac sign user is interested in.
+        - The user can also access the 'Zodiac Signs' page by using the navigation bar found on every page.
+        - If the user is not sure what their zodiac sign is, they can find out by using the Calculator page and then navigating to the Zodiac Signs page from there.
+    1. I want to be able to quickly access the needed information.
+        - The user can easily access the needed horoscope by navigating to the 'Zodiac Signs' page and selecting the zodiac.
+- #### As a visitor looking to learn more about Astronomy, Astrology, or both.
+    1. I want the text to be easily readable.
+        - The size of the smallest text (minus the footer and asterisk on the Zodiac Signs page) is 1rem or 16px which is within the recommended size of comfortable reading text.
+        - All pages have the same dark blue background and light yellow text to ensure the user doesn't have to get used to different colors and brightnesses. Additionally, the color contrast was tested out by people who have dyslexia to ensure the text is easily readable.
+        - The font 'Lora' is sans based font that is used mostly across all pages and in all paragraphs. It is said that sans fonts increase the speed and ease at which people read the text and so increase the readability of the website. 
+        - All paragraphs have been nicely spaced (letter spacing, line spacing, margins, and padding) which doesn't unnecessarily hinder users' experience understanding the site.
+    engaging concise information that's easily understandable.
+        - All information used has been shortened and simplified to ensure that users of all levels of topic knowledge can understand it and finds it engaging.
+        - Each page has a short paragraph explaining what constellations or zodiac signs are, this was user doesn;t have to read additional/longer information on the Home page.
+    1. I want to be able to find out what my zodiac sign is.
+        - The user can go to the 'Calculator' page where they can put in their date of birth, click 'Find Out' to find out what their zodiac sign is.
+        - Alterntively, the user can also go tot the 'Zodiac Signs' page and click thorugh all 12 zodiacs to see what dates each zodiac corresponds to.
+    1. I want to understand what is the difference and the connection between Astrology and Astronomy.
+        - The user can find additional information in the 'About' section which is located on the bottom of the Home page.
+        - The user can select 'Astronomy', 'Astrology', or 'Connection' to read more about the history of each field or the connection between both.
+        - Once the user is on either of the 'Constellations' or 'Zodiac Signs' page, the user can find the link to the other site at the bottom.
+        - All constellations and zodiac signs are named correspondingly which further aids the user in understanding which ones are connected.
+        - Lastly, the user can see both, the constellation image and the zodiac sign image of each by selecting their date of birth on the calculator page.
 
 
 
