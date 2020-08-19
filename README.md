@@ -181,7 +181,7 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - Short page describer that provides the user information about the zodiac signs.
     - Graphic buttons displaying each zodiac sign, that lets the user select which zodiac sign they would like to learn more about.
     - A dynamic heading and icon that is populated once the user selects the zodiac sign. This lets the user immediately get a validation that the correct zodiac sign has been selected.
-    - Daily Horoscope, Lucky Number, and Lucky Color fields that are populated using (aztro API)[https://rapidapi.com/sameer.kumar/api/aztro].
+    - Daily Horoscope, Lucky Number, and Lucky Color fields that are populated using [aztro API](https://rapidapi.com/sameer.kumar/api/aztro).
     - Daily Horoscope is updated daily which provides the user with a reason to return to the website daily.
     - A short paragraph at the bottom of the page containing a link so that the user can easily navigate to the zodiac page.
     - All functionality is achieved by using JavaScript([zodiac.js](https://github.com/liigalized/astro/blob/master/assets/scripts/zodiac.js)).
@@ -460,6 +460,7 @@ If you wish to clone or download this repository to your local device you can fo
 
 <a name="bugs"></a>
 ## Known Bugs
+- There are no known bugs as at now.
 
 
 
@@ -467,21 +468,42 @@ If you wish to clone or download this repository to your local device you can fo
 ## Credits
 
 ### Code :floppy_disk:
-
-- 
+- Most of the code was written by the author - Liga Baikova in jQuery.
+- The code in the calculator.js file lines 90 - 101 was provided to me by my mentor Maranatha Ilesanmi. The code refreshes the Calculator page when navigated to and prevent previous entries from saving (caching).
+- The 3D models were coded using the Three.js library. Even though I used the docs, examples, and tutorials supplied on their website, there isn't anything quite like my model so even though the 'HOW' was taken from the website, the 'WHAT' was produced by me.
+- 3D models were coded in JavaScript rather than jQuery to be consistent with Three.js docs and allow for easier debugging.
+- jQuery library and docs were used in most JavaScript files.
+- Bootstrap was used in layout coding as well as the navigation, collapsable hamburger menu and the footer.
 
 ### Content :book:
 
-- 
+- To create the color scheme I used [coolors](https://coolors.co/)
+- To write up a README file the most helpful documents were
+    - Code Institute [SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME)
+    - Code Institute [README Template](https://github.com/Code-Institute-Solutions/readme-template)
+    - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+    - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+    - List of [emoji markdown](https://gist.github.com/rxaviers/7360908)
+- The history of Astronomy content was inspired by[Wikipedia](https://en.wikipedia.org/wiki/Astronomy) and [Sky and Telescope](https://skyandtelescope.org/astronomy-resources/whats-difference-astrology-vs-astronomy/).
+- The history of Astrology content was inspired by [Wikipedia](https://en.wikipedia.org/wiki/Astrology) and [Wtamu](https://wtamu.edu/~cbaird/sq/2013/03/23/how-does-astrology-work/).
+- The Connection between both fields' content was inspired by [Interesting Engineering](https://interestingengineering.com/astrology-vs-astronomy-whats-the-difference) and [Wikipedia](https://en.wikipedia.org/wiki/Astrology_and_astronomy).
+- The content about Zodiac signs was inspired by this [NASA](https://spaceplace.nasa.gov/starfinder2/en/) article for kids.
+- The content about constellations was inspired by [Wikipedia](https://en.wikipedia.org/wiki/Constellation).
+- The Constellation mapping was done by using the constellation maps from [The Sky](http://www.seasky.org/sky.html). The individual star data was obtained from this website as well.
+- The API used in the Zodiac Signs Page is [aztro API](https://rapidapi.com/sameer.kumar/api/aztro) which was found through [Rapid API](https://rapidapi.com/) website.
 
 
 ### Media :clapper:
-- 
+- The star icon used as the main page background and with the page buttons was designed and created by me.
+- The constellation graphics and zodiac graphics for the graphic buttons were custom designed for this project by a graphic designer [Claire Schorman](https://www.instagram.com/byclaireschorman/).
 
 
 ### Acknowledgements
 
-- 
+- I was inspired by my passion for astronomy and identified missinformation out there.
+- Thank you to everyone who took their time to provide me constructive feedback on the Slack community page.
+- Thanks to my friends and family foe endless testing.
+- Big thanks to my mentor for putting up with my questions and giving me great insights.
 
 
 
