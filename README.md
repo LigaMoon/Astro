@@ -279,18 +279,34 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - Links connecting the 'Constellations' page to the 'Zodiac Signs' page and vice versa work and have been tested.
     - All page links on the 'Home' page and the 'Calculator' page are working as expected and redirect the user to the relevant pages.
 
+### HTML5 validator
+- Home Page - Pass - [Results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fliigalized.github.io%2Fastro%2Findex.html)
+- Constellations Page - Pass - [Results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fliigalized.github.io%2Fastro%2Fconstellations.html)
+- Zodiac Signs Page - Pass - [Results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fliigalized.github.io%2Fastro%2Fzodiac.html)
+- Calculator Page - Pass - [Results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fliigalized.github.io%2Fastro%2Fcalculator.html)
+
+
 
 ### CSS3 validator - Pass
 
-<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliigalized.github.io%2FMS1_boredom_guide%2Fassets%2Fstyles%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliigalized.github.io%2Fastro%2Fassets%2Fstyles%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
     <img style="border:0;width:88px;height:31px"
         src="http://jigsaw.w3.org/css-validator/images/vcss"
         alt="Valid CSS!">
 </a> :point_left: Results
 
 
-### HTML5 validator
-- 
+### JSHint validator - no major issues
+- index.js
+    - xxx
+- main.js
+    - xxx
+- models.js
+    - xxx
+- zodiac.js
+    - xxx
+- calculator.js
+    - xxx
 
 ### Usability Testing
 - To test the ease of navigation, this website was shared with few friends of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
