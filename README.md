@@ -309,8 +309,9 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - xxx
 
 ### Usability Testing
-- To test the ease of navigation, this website was shared with few friends of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
-- The testers also verified that all buttons, links, hamburger menu and photo carousel work correctly, intuitively and as expected
+- To test the ease of navigation, this website was shared with friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
+- The testers also verified that all functionality aspects are working as explained above and as expected.
+- Testers expressed that the design is easy to understand and navigate.
 
 ### Compatibility Testing
 - Browser Compatibility
@@ -321,13 +322,18 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     | Desktop             |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| Not Tested        |
     | Tablet              |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| Not Tested        |
 
-- OS Compatibility was tested on iOS 13.4.1, Android 10.0, MacOS Catalina, iPadOS 13.4.1 and Windows 10. It is yet to be tested on Unix, Linux or Solaris Operating Systems.
-- The devices used in this testing include Macbook Pro, Toshiba laptop, iPad Pro, iPhone Xr, Xiaomi 3, HTC 11, iPhone 8 and other android mobile phones.
-- The website was exhaustively tested for responsiveness on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). Different viewport sizes were simulated ranging from as small as iPhone 5 (320px) to large desktop sizes (1200px and above).
+- OS Compatibility was tested on iOS 13.6.1, Android 10.0, MacOS Catalina v10.15.6, iPadOS 13.6.1, and Windows 10 'May 2020 update'. It is yet to be tested on Unix, Linux or Solaris Operating Systems.
+- The devices used in this testing include Macbook Pro, Toshiba laptop, iPad Pro, iPhone Xr, Xiaomi 3, HTC 11, iPhone 8, HUAWEI P40 Pro and other android mobile phones.
+- The website was exhaustively tested for responsiveness on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). Different viewport sizes were simulated ranging from as small as Galaxy Fold (280px) to large desktop sizes (1200px and above).
 
 ### Performance Testing
-- 
+- Overall WebPage Performance Test was done using [WebPageTest](https://www.webpagetest.org/) with test location set to Ireland and test browser set to Chrome. Some areas of improvement according to this website are Security of the site and Cache Static Content which are out of the scope of this particular project, however, I will be looking to improve these in the future.
+    - Home Page - [Results](https://www.webpagetest.org/result/200819_AV_983525533e30fca92502f529b1c38cc9/)
+    - Constellations Page - [Results](https://www.webpagetest.org/result/200819_AT_3501991438e11ad1f2ce49195fd7a750/)
+    - Zodiac Signs Page - [Results](https://www.webpagetest.org/result/200819_5Y_7c2c52f512d36f27f0a693fbecb10e40/)
+    - Calculator Page - [Results](https://www.webpagetest.org/result/200819_VQ_68fae80e7a859248082c3b44917bfa74/)
 
+        <img src="./assets/images/readme/perf-test.png" height="50px"/>
 
 
 
