@@ -1,5 +1,6 @@
-// Date formats used are 1MMDD
+// Declaring and initializing variables
 
+// Date formats used are 1MMDD
 let calendar = [
     ["Month", "Day"],
     ["January", 31, 101],
@@ -86,8 +87,7 @@ let zodiacSigns = [
 
 let dateValue;
 
-
-// function to refresh the fields when page is navigated to - provided by my mentor
+// function to refresh the fields when page is navigated to - provided by my mentor (line 90 - 101)
 function refresh() {
     window.addEventListener( "pageshow", function ( event ) {
         var historyPage = event.persisted ||
@@ -100,73 +100,20 @@ function refresh() {
     });
 }
 
-const calculator = ()=> {
-    makeDropdowns();
-
-    $( 'select' ).change( function( ) {
-        let dayValue = $( '#day' ).val( );
-        let monthValue = $( '#month' ).val();
-        function filteredByMonth( item ) {
-            if( item[0] === monthValue ) {
-                return true;
-            }
-        }
-        var filteredMonth = calendar.filter(filteredByMonth)[0][2];
-        // let dateValue;
-        // if ( dayValue.length === 1) {
-            
-        dateValue = Number(`${filteredMonth}${dayValue.length === 1 ? '0': ''}${dayValue}`);
-        // } else {
-            // dateValue = `${filteredMonth}${dayValue}`;
-            // dateValue = Number(filteredMonth + dayValue);
-        // }
-        // console.log(dateValue);
-    });
-    $( '#find-sign' ).click(() => {
-        zodiacSigns.forEach( sign => {
-            if( dateValue >= sign.startDate && dateValue <= sign.endDate) {
-                let signName = sign.name;
-                changeTitle( signName );
-                changeGraphic( signName );
-            }
-        });
-    });
-}
-
-refresh();
-calculator ();
-
-
-// function changeZodiac ( zodiac ) {
-//     $('.zodiac-sign').html(`<img src="./assets/images/zodiac/${zodiac}_yellowzodiac.PNG" alt="A graphic of the ${zodiac} zodiac sign">`);
-//     $('.constellation-sign').html(`<img src="./assets/images/constellations/${zodiac}_yellow.PNG" alt="A graphic of the ${zodiac} constellation sign">`);
-    
-//     let halfIndex = Math.round(zodiac.length / 2);
-//     let leftText = zodiac.slice(0, halfIndex);
-//     let rightText = zodiac.slice(halfIndex, zodiac.length);
-
-// $('.model-name').html(`${leftText}<span class="sub-cursive-size lowercase heading-cursive">${rightText}</span>`);
-// }
-
-
-
-function makeDropdowns ( ) {
-    createMonth( calendar );
-    createDay( calendar );
-}
-
-function createMonth ( cal ) {
-    cal.forEach( function( date ) {
+//  Creates month dropdowns
+const createMonth = cal => {
+    cal.forEach(  date => {
         $('#month').append(`<option>${date[0]}</option>`);
-    })
-}
+    });
+};
 
-function createDay ( cal ) {
+// Creates Day dropdowns depending on what month was selected, if a valid month has not been selected it will display 'select valid month'
+const createDay = cal => {
     $( '#month' ).change( function( ) {
         let returnedMonth =  $( this ).val( );
         $( '#day' ).html("");
        if( returnedMonth === "Month") {
-            $( '#day' ).append(`<option>Please Select Valid Month</option`);
+            $( '#day' ).append(`<option>Select Valid Month</option`);
        } else {
            cal.forEach( function( date ) {
                if ( returnedMonth === date[0]){
@@ -178,5 +125,50 @@ function createDay ( cal ) {
            });
        }
     });  
-}
+};
+
+// Creates dropdowns by calling month and day functions
+const makeDropdowns = ( ) => {
+    createMonth( calendar );
+    createDay( calendar );
+};
+
+// Creates dropdowns and when a value is changed, the date is retrieved in a MMMDD format which is compared to start and end dates of each zodiac to return the correct one
+const calculator = ()=> {
+    makeDropdowns();
+    $( 'select' ).change( ( ) => {
+        let dayValue = $( '#day' ).val( );
+        let monthValue = $( '#month' ).val();
+        function filteredByMonth( item ) {
+            if( item[0] === monthValue ) {
+                return true;
+            }
+        }
+        var filteredMonth = calendar.filter(filteredByMonth)[0][2];   
+        dateValue = Number(`${filteredMonth}${dayValue.length === 1 ? '0': ''}${dayValue}`);
+    });
+    $( '#find-sign' ).click(() => {
+        zodiacSigns.forEach( sign => {
+            if( dateValue >= sign.startDate && dateValue <= sign.endDate) {
+                let signName = sign.name;
+                changeTitle( signName );
+                changeGraphic( signName );
+            }
+        });
+    });
+};
+
+// calling refresh and calculator functions
+refresh( );
+calculator( );
+
+
+
+
+
+
+
+
+
+
 
