@@ -505,6 +505,7 @@ If you wish to clone or download this repository to your local device you can fo
     - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
     - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
     - List of [emoji markdown](https://gist.github.com/rxaviers/7360908)
+    - I used the structure of my last projects [README](https://github.com/liigalized/MS1_boredom_guide) file and re-used the write-up elements that were repeated in this project.
 - The history of Astronomy content was inspired by[Wikipedia](https://en.wikipedia.org/wiki/Astronomy) and [Sky and Telescope](https://skyandtelescope.org/astronomy-resources/whats-difference-astrology-vs-astronomy/).
 - The history of Astrology content was inspired by [Wikipedia](https://en.wikipedia.org/wiki/Astrology) and [Wtamu](https://wtamu.edu/~cbaird/sq/2013/03/23/how-does-astrology-work/).
 - The Connection between both fields' content was inspired by [Interesting Engineering](https://interestingengineering.com/astrology-vs-astronomy-whats-the-difference) and [Wikipedia](https://en.wikipedia.org/wiki/Astrology_and_astronomy).
@@ -523,7 +524,7 @@ If you wish to clone or download this repository to your local device you can fo
 
 - I was inspired by my passion for astronomy and identified missinformation out there.
 - Thank you to everyone who took their time to provide me constructive feedback on the Slack community page.
-- Thanks to my friends and family foe endless testing.
+- Thanks to my friends and family for endless testing.
 - Big thanks to my mentor for putting up with my questions and giving me great insights.
 
 
