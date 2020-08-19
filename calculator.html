@@ -17,9 +17,9 @@
         <!-- Font awesome cdn -->
         <script src="https://kit.fontawesome.com/d6343cbdf9.js" crossorigin="anonymous"></script>
     </head>
-
     <body class="d-flex flex-column h-100">
         <header>
+        <!-- navbar -->
             <nav class="navbar fixed-top navbar-expand-md py-0">
                 <a class="navbar-brand ml-5 uppercase" href="./index.html">Astro</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,44 +44,42 @@
             </nav>
             <a class="fixed-top" href="./index.html"><span id="header-star"></span></a>
         </header>
-
         <main class="flex-shrink-0">
+        <!-- main page describer container -->
             <div class="container-flex mx-2 mx-md-5">
                 <h1 class="uppercase two-font-heading">Calculator</h1>
                 <p class="page-describer">
                     Not sure what your zodiac sign is? Enter your date of birth and find out!
                 </p>
+                <!-- calculator container -->
                 <div class="col-12 col-lg-10 col-xl-8 mx-auto my-5 py-3 main-container-zodiac text-center">
                     <h2 class="sub-heading-size">Enter your Date of Birth</h2>
-
+                    <!-- date picker that is populated using JS -->
                     <div id="date-picker">
                         <select name="month" id="month"></select>
                         <select name="day" id="day"></select>
                     </div>
                     <button id="find-sign" class="page-button star-button lowercase"> Find Out</button>
-
                     <div class="zodiac-container gradient-border">
                         <h2 class="uppercase two-font-heading">Zodiac sign</h2>
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <div class="constellation-sign">
-                                <p class="placeholder">?</p>
+                        <div class="row">
+                            <div class="col-12 col-md">
+                                <div class="constellation-sign">
+                                    <p class="placeholder">?</p>
+                                </div>
+                                <a href="./constellations.html" class="lowercase page-button star-button"> Constellations</a>
                             </div>
-                            <a href="./constellations.html" class="lowercase page-button star-button"> Constellations</a>
-                        </div>
-                        <div class="col-12 col-md">
-                            <div class="zodiac-sign">
-                                <p class="placeholder">?</p>
+                            <div class="col-12 col-md">
+                                <div class="zodiac-sign">
+                                    <p class="placeholder">?</p>
+                                </div>
+                                <a href="./zodiac.html" class="lowercase page-button star-button"> Zodiac Signs</a>
                             </div>
-                            <a href="./zodiac.html" class="lowercase page-button star-button"> Zodiac Signs</a>
                         </div>
-                    </div>
-
                     </div>
                 </div>
             </div>
         </main>
-
         <footer class="footer mt-auto">
             <div class="container-fluid text-lowercase">
                 <div class="row">
@@ -99,11 +97,13 @@
             </div>
         </footer>
 
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- cdn for Bootstrap functionality -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Link internal scripts -->
         <script src="./assets/scripts/main.js"></script>
         <script src="./assets/scripts/calculator.js"></script>
-        
     </body>
 </html>
