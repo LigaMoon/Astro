@@ -1,8 +1,8 @@
 
 <h1 align="center">ASTRO</h1>
-<h1 align="center"><img src="" /></h1>
+<h1 align="center"><img src="./assets/images/readme/responsive.png" /></h1>
 
- <a href=""><img src="" width="25px" /></a> :point_left: Live website
+ <a href="https://liigalized.github.io/astro/"> :star2:	</a> :point_left: Live website
 
   <a href=""><img src="./assets/images/readme/githublogo.png" width="25px" /></a> :point_left: GitHub Repository
  
@@ -189,7 +189,7 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - This page allows the user to find out what zodiac sign they are, in case they are not familiar with it.
     - Month selector and Day selector that is populated with a precise number of days depending on what month the user selected. This helps the user to chose an accurate date.
     - A call-to-action button that displays the relevant zodiac/constellation name, zodiac sign and constellation sign at the bottom.
-    - Zodiac sign and Constellation sign graphics are buttons that bring the user to the relevant page, moreover, there are page buttons underneath the graphics for added clarity.
+    - Zodiac sign and Constellation sign graphics have the relevant page buttons underneath for easy navigation.
     - The functionality was achieved by using JavaScript ([calculator.js](https://github.com/liigalized/astro/blob/master/assets/scripts/calculator.js))
 
 ### Future Features
@@ -268,8 +268,7 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     - When the user selects a month, the day selector is updated with the precise number of days in the chosen month.
     - If no month has been selected, the day selector will not be populated.
     - When the user clicks on the 'Find Out' button, it populates the bottom container with relevant zodiac/constellation names and icons.
-    - Both graphic icons take the user to either the 'Constellations' page or the 'Zodiac Signs' page.
-    - Additionally, the page buttons underneath each graphic icon bring the user to the relevant pages.
+    - The page buttons underneath each graphic icon bring the user to the relevant pages.
     - If the user tries to navigate back to the calculator using the 'back' button, the page refreshes to clear the previous selection.
 -  #### All external links were tested to make sure they open up the correct pages in new tabs
     - All social links in the footer bring the user to the relevant social pages that open in a new tab.
@@ -297,20 +296,20 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 
 
 ### JSHint validator - no major issues
-- The warnings recieved back accross all JavaScript files - all of these but one are ES6 related and considered to be the best practice in coding
-    - Issue with `let` variable
+- The warnings received back across all JavaScript files - all of these but one are ES6 related and considered to be the best practice in coding
+    - An issue with `let` variable
     
     <img src="./assets/images/readme/let.png" height="40px" />
 
-    - Issue with `const` variable
+    - An issue with `const` variable
     
     <img src="./assets/images/readme/const.png" height="40px" />
 
-    - Issue with template literals
+    - An issue with template literals
     
     <img src="./assets/images/readme/template-literal.png" height="40px" />
 
-    - Issue with arrow function syntax
+    - An issue with arrow function syntax
     
     <img src="./assets/images/readme/arrow.png" height="40px" />
 
@@ -319,18 +318,17 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
     <img src="./assets/images/readme/undefinedjquery.png" height="40px" />
 
 - File specific issues 
-    - Functions being declared within loops in **models.js** - this was needed to create a functionality for each button to be able to display a matching constellation.
+    - Functions being declared within loops in **models.js** - this was needed to create functionality for each button to be able to display a matching constellation.
     
     <img src="./assets/images/readme/functions.png" height="80px" />
 
-    - Undefined variables in **calculator.js** file - these are actually functions that have been declared in the main.js file and has been linked to the same html document.
+    - Undefined variables in **calculator.js** file - these are functions that have been declared in the main.js file and have been linked to the same HTML document.
 
     <img src="./assets/images/readme/undefined.png" height="150px" />
 
     - Undefined variables in ***models.js* file - these are functions declared in a different JS file. THREE and canvas variables have been declared within the Three.js library.
 
     <img src="./assets/images/readme/undefinedthree.png" height="50px" />
-
 ### Usability Testing
 - To test the ease of navigation, this website was shared with friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
 - The testers also verified that all functionality aspects are working as explained above and as expected.
