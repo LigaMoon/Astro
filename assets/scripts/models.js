@@ -1,11 +1,11 @@
 // initialize variables
-var renderer, scene, camera, container, parent;
+var renderer, scene, camera, container, parentVar;
 var controls;
 var mouse = new THREE.Vector2( );
 var raycaster, intersects, INTERSECTED;
-var constellationData, cnostellationName, constellationDistance;
+var constellationData, constellationName, constellationDistance;
 
-// constellation data
+// Declare constellations data
 var capricornus = [
     {
         coord: [3.3, 2.1, -0.5],
@@ -792,7 +792,7 @@ let button = document.getElementsByClassName( 'graphic-button' );
 let starName = document.getElementById( 'star-name' );
 let starType = document.getElementById( 'star-type' );
 
-// init( );
+// Call for instructions to be displayed and implement button functionality
 instructions ( );
 buttons( );
 
@@ -804,8 +804,7 @@ function instructions ( ) {
             <li>Click on any star to learn more.</li>
             <li>Enjoy!</li>
         </ol>`;
-
-    let instructionsHeading = `Instru<span class="cursive lowercase">ctions</span>`
+    let instructionsHeading = `Instru<span class="cursive lowercase">ctions</span>`;
 
     container.innerHTML = instructionText;
     modelName.innerHTML = instructionsHeading;
@@ -817,8 +816,8 @@ function instructions ( ) {
 function init ( ) {
     // init container
     container.innerHTML = "";
-    parent = document.getElementById( 'model-container' );
-    parent.appendChild( container );
+    parentVar = document.getElementById( 'model-container' );
+    parentVar.appendChild( container );
 
     // init renderer
     renderer = new THREE.WebGLRenderer( {antialias: true, alpha: true} );
@@ -849,6 +848,7 @@ function init ( ) {
     container.addEventListener( 'touchstart', onMobileTouch, false );
     document.getElementById( 'reset' ).addEventListener( 'click', reset, false);
 
+    // clear star specific data only
     clearData( );
 }
 
@@ -861,11 +861,12 @@ function buttons( ){
             while ( scene.children.length > 0 ) {
                 scene.remove( scene.children[0] );
             }
-
-            constellationName = constellations[i].constName
+            // For each button create a data set which isused to create constellations
+            constellationName = constellations[i].constName;
             constellationData = constellations[i].data;
             constellationDistance = constellations[i].distance;
 
+            // Call functions to create adn animate models adn change data for each constellations
             createConstellation( constellationData );
             animate( );
             capitalizeConstName( constellationName );
@@ -883,11 +884,12 @@ function createConstellation( constellationData ) {
 
     // create an array for constellation coordinates to be adde
     var constellation = [ ];
+  	let geometrySphere;
 
     // iterate through coordinates and add do the array, create sphere at these coordinates
     for( let i = 0; i < constellationData.length; i ++ ) {
         constellation.push( new THREE.Vector3( constellationData[i].coord[0], constellationData[i].coord[1], constellationData[i].coord[2] ) );
-        var geometrySphere = new THREE.SphereGeometry( 0.2, 32, 32 );
+        geometrySphere = new THREE.SphereGeometry( 0.2, 32, 32 );
     }
     
     // add material to each sphere
@@ -932,7 +934,7 @@ function capitalizeConstName ( constName ) {
 
 // Function to update the constellation distance from earth 
 function constDistance ( constDist ) {
-    let distance = `${constDist} Light-Years*`
+    let distance = `${constDist} Light-Years*`;
 
     document.getElementById( 'constellation-distance' ).innerText = distance;
 }
@@ -1031,6 +1033,9 @@ function onMobileTouch( event ) {
     starBrightness( );
     starData( );
 }
+
+
+
 
 
 
