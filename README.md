@@ -297,16 +297,39 @@ This website connects Astronomy and Astrology while highlighting unique aspects 
 
 
 ### JSHint validator - no major issues
-- index.js
-    - xxx
-- main.js
-    - xxx
-- models.js
-    - xxx
-- zodiac.js
-    - xxx
-- calculator.js
-    - xxx
+- The warnings recieved back accross all JavaScript files - all of these but one are ES6 related and considered to be the best practice in coding
+    - Issue with `let` variable
+    
+    <img src="./assets/images/readme/let.png" height="40px" />
+
+    - Issue with `const` variable
+    
+    <img src="./assets/images/readme/const.png" height="40px" />
+
+    - Issue with template literals
+    
+    <img src="./assets/images/readme/template-literal.png" height="40px" />
+
+    - Issue with arrow function syntax
+    
+    <img src="./assets/images/readme/arrow.png" height="40px" />
+
+    - Undeclared $ variable - this is a jQuery variable defined within jQuery library
+    
+    <img src="./assets/images/readme/undefinedjquery.png" height="40px" />
+
+- File specific issues 
+    - Functions being declared within loops in **models.js** - this was needed to create a functionality for each button to be able to display a matching constellation.
+    
+    <img src="./assets/images/readme/functions.png" height="80px" />
+
+    - Undefined variables in **calculator.js** file - these are actually functions that have been declared in the main.js file and has been linked to the same html document.
+
+    <img src="./assets/images/readme/undefined.png" height="150px" />
+
+    - Undefined variables in ***models.js* file - these are functions declared in a different JS file. THREE and canvas variables have been declared within the Three.js library.
+
+    <img src="./assets/images/readme/undefinedthree.png" height="50px" />
 
 ### Usability Testing
 - To test the ease of navigation, this website was shared with friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating the website.
