@@ -2,7 +2,7 @@
 <h1 align="center">ASTRO</h1>
 <h1 align="center"><img src="./assets/images/readme/responsive.png" /></h1>
 
- <a href="https://liigalized.github.io/astro/"> :star2:	</a> :point_left: Live website
+ <a href="https://ligamoon.github.io/astro/"> :star2:	</a> :point_left: Live website
 
   <a href=""><img src="./assets/images/readme/githublogo.png" width="25px" /></a> :point_left: GitHub Repository
  
